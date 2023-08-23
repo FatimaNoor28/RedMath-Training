@@ -1,0 +1,33 @@
+logging:
+  level:
+    sql: debug
+    '{org.example.news}': debug
+  pattern:
+    level: "%5p ${HOSTNAME}"
+#    console:
+  file:
+    name: target/news.log
+#    To display another entry in log
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: ${news.db.url}
+    username: ${news.db.user}
+    password: ${news.db.password}
+#    url: ${NEWS_DB_URL}
+#    username: ${NEWS_DB_USER}
+#    password: ${NEWS_DB_PASSWORD}
+
+server:
+  port: 9090
+
+spring.profiles.include: dev
+
+#java -Dnews.db.url=jdbc:h2:mem:news -Dnews.db.user=SA -jar news-0.0.1-SNAPSHOT.jar
+#this cmd at production time

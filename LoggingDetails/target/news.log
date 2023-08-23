@@ -1,0 +1,1068 @@
+2023-08-23T11:27:46.643Z  INFO DESKTOP-JQ22B4E 5416 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 5416 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T11:27:46.646Z  INFO DESKTOP-JQ22B4E 5416 --- [main] org.example.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T11:27:47.412Z  INFO DESKTOP-JQ22B4E 5416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T11:27:47.469Z  INFO DESKTOP-JQ22B4E 5416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2023-08-23T11:27:48.124Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T11:27:48.135Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T11:27:48.136Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T11:27:48.238Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T11:27:48.239Z  INFO DESKTOP-JQ22B4E 5416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1505 ms
+2023-08-23T11:27:48.284Z  INFO DESKTOP-JQ22B4E 5416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T11:27:48.489Z  INFO DESKTOP-JQ22B4E 5416 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:065eed40-9f0b-4e78-b88e-1c5ead524cbd user=SA
+2023-08-23T11:27:48.490Z  INFO DESKTOP-JQ22B4E 5416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T11:27:48.501Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:065eed40-9f0b-4e78-b88e-1c5ead524cbd'
+2023-08-23T11:27:48.670Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T11:27:49.088Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.092Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.096Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.098Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.102Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.103Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T11:27:49.117Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T11:27:49.121Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.122Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T11:27:49.125Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.126Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.165Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T11:27:49.167Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T11:27:49.167Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 6ms
+2023-08-23T11:27:49.170Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.171Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.174Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:27:49.175Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:27:49.176Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 4ms
+2023-08-23T11:27:49.177Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.178Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T11:27:49.180Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:27:49.180Z  INFO DESKTOP-JQ22B4E 5416 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T11:27:49.265Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T11:27:49.408Z  INFO DESKTOP-JQ22B4E 5416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T11:27:49.410Z  INFO DESKTOP-JQ22B4E 5416 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T11:27:49.551Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:27:49.716Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T11:27:49.960Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:27:50.560Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T11:27:50.562Z  INFO DESKTOP-JQ22B4E 5416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:27:50.927Z  WARN DESKTOP-JQ22B4E 5416 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T11:27:51.080Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T11:27:51.285Z  INFO DESKTOP-JQ22B4E 5416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T11:27:51.296Z  INFO DESKTOP-JQ22B4E 5416 --- [main] org.example.Application                  : Started Application in 5.471 seconds (process running for 5.919)
+2023-08-23T11:29:57.922Z  INFO DESKTOP-JQ22B4E 5416 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:29:57.924Z  INFO DESKTOP-JQ22B4E 5416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T11:29:57.926Z  INFO DESKTOP-JQ22B4E 5416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T11:30:01.020Z  INFO DESKTOP-JQ22B4E 3980 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 3980 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T11:30:01.021Z  INFO DESKTOP-JQ22B4E 3980 --- [main] org.example.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T11:30:01.689Z  INFO DESKTOP-JQ22B4E 3980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T11:30:01.745Z  INFO DESKTOP-JQ22B4E 3980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2023-08-23T11:30:02.372Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T11:30:02.382Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T11:30:02.383Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T11:30:02.474Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T11:30:02.475Z  INFO DESKTOP-JQ22B4E 3980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1389 ms
+2023-08-23T11:30:02.533Z  INFO DESKTOP-JQ22B4E 3980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T11:30:02.724Z  INFO DESKTOP-JQ22B4E 3980 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6557fbd9-32ff-4ee0-ad10-026a18d23faa user=SA
+2023-08-23T11:30:02.725Z  INFO DESKTOP-JQ22B4E 3980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T11:30:02.736Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:6557fbd9-32ff-4ee0-ad10-026a18d23faa'
+2023-08-23T11:30:02.929Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T11:30:03.352Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.355Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.361Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.364Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.370Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.370Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T11:30:03.384Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T11:30:03.388Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.389Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T11:30:03.392Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.394Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.432Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T11:30:03.434Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T11:30:03.435Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 6ms
+2023-08-23T11:30:03.439Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.440Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.443Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:30:03.444Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:30:03.445Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 3ms
+2023-08-23T11:30:03.447Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.448Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T11:30:03.450Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:03.450Z  INFO DESKTOP-JQ22B4E 3980 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T11:30:03.537Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T11:30:03.609Z  INFO DESKTOP-JQ22B4E 3980 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T11:30:03.614Z  INFO DESKTOP-JQ22B4E 3980 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T11:30:03.761Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:30:03.898Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T11:30:04.120Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:30:04.650Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T11:30:04.652Z  INFO DESKTOP-JQ22B4E 3980 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:30:05.003Z  WARN DESKTOP-JQ22B4E 3980 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T11:30:05.195Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T11:30:05.373Z  INFO DESKTOP-JQ22B4E 3980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T11:30:05.381Z  INFO DESKTOP-JQ22B4E 3980 --- [main] org.example.Application                  : Started Application in 4.937 seconds (process running for 5.328)
+2023-08-23T11:30:30.585Z  INFO DESKTOP-JQ22B4E 3980 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:30:30.589Z  INFO DESKTOP-JQ22B4E 3980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T11:30:30.592Z  INFO DESKTOP-JQ22B4E 3980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T11:30:33.278Z  INFO DESKTOP-JQ22B4E 5632 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 5632 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T11:30:33.280Z  INFO DESKTOP-JQ22B4E 5632 --- [main] org.example.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T11:30:33.996Z  INFO DESKTOP-JQ22B4E 5632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T11:30:34.053Z  INFO DESKTOP-JQ22B4E 5632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2023-08-23T11:30:34.686Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T11:30:34.697Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T11:30:34.697Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T11:30:34.797Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T11:30:34.798Z  INFO DESKTOP-JQ22B4E 5632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1464 ms
+2023-08-23T11:30:34.830Z  INFO DESKTOP-JQ22B4E 5632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T11:30:35.026Z  INFO DESKTOP-JQ22B4E 5632 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:9611748b-0219-4100-a172-0b38a0a6b142 user=SA
+2023-08-23T11:30:35.028Z  INFO DESKTOP-JQ22B4E 5632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T11:30:35.038Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9611748b-0219-4100-a172-0b38a0a6b142'
+2023-08-23T11:30:35.199Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T11:30:35.541Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.544Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.549Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.552Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.557Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.558Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T11:30:35.570Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T11:30:35.574Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.575Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T11:30:35.578Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.578Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.617Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T11:30:35.619Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T11:30:35.619Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 5ms
+2023-08-23T11:30:35.623Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.625Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.627Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:30:35.628Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:30:35.629Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 3ms
+2023-08-23T11:30:35.630Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.631Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T11:30:35.633Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:30:35.633Z  INFO DESKTOP-JQ22B4E 5632 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T11:30:35.716Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T11:30:35.786Z  INFO DESKTOP-JQ22B4E 5632 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T11:30:35.796Z  INFO DESKTOP-JQ22B4E 5632 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T11:30:35.980Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:30:36.124Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T11:30:36.342Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:30:36.855Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T11:30:36.858Z  INFO DESKTOP-JQ22B4E 5632 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:30:37.151Z  WARN DESKTOP-JQ22B4E 5632 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T11:30:37.281Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T11:30:37.450Z  INFO DESKTOP-JQ22B4E 5632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T11:30:37.458Z  INFO DESKTOP-JQ22B4E 5632 --- [main] org.example.Application                  : Started Application in 4.833 seconds (process running for 5.193)
+2023-08-23T11:31:41.083Z  INFO DESKTOP-JQ22B4E 5632 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:31:41.086Z  INFO DESKTOP-JQ22B4E 5632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T11:31:41.087Z  INFO DESKTOP-JQ22B4E 5632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T11:32:45.944Z  INFO DESKTOP-JQ22B4E 2228 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 2228 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T11:32:45.947Z  INFO DESKTOP-JQ22B4E 2228 --- [main] org.example.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T11:32:46.615Z  INFO DESKTOP-JQ22B4E 2228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T11:32:46.684Z  INFO DESKTOP-JQ22B4E 2228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2023-08-23T11:32:47.295Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T11:32:47.305Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T11:32:47.305Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T11:32:47.409Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T11:32:47.409Z  INFO DESKTOP-JQ22B4E 2228 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1408 ms
+2023-08-23T11:32:47.439Z  INFO DESKTOP-JQ22B4E 2228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T11:32:47.623Z  INFO DESKTOP-JQ22B4E 2228 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6175afc5-0abd-4cfe-bc07-2a596a4e688d user=SA
+2023-08-23T11:32:47.625Z  INFO DESKTOP-JQ22B4E 2228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T11:32:47.634Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:6175afc5-0abd-4cfe-bc07-2a596a4e688d'
+2023-08-23T11:32:47.800Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T11:32:48.188Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.192Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.196Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.200Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.205Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.205Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T11:32:48.219Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T11:32:48.223Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.224Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T11:32:48.226Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.227Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.267Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T11:32:48.268Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T11:32:48.269Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 5ms
+2023-08-23T11:32:48.272Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.273Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.276Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:32:48.277Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:32:48.278Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 3ms
+2023-08-23T11:32:48.279Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.280Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T11:32:48.282Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:32:48.283Z  INFO DESKTOP-JQ22B4E 2228 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T11:32:48.359Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T11:32:48.443Z  INFO DESKTOP-JQ22B4E 2228 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T11:32:48.447Z  INFO DESKTOP-JQ22B4E 2228 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T11:32:48.613Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:32:48.757Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T11:32:48.956Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:32:49.491Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T11:32:49.494Z  INFO DESKTOP-JQ22B4E 2228 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:32:49.779Z  WARN DESKTOP-JQ22B4E 2228 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T11:32:49.910Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T11:32:50.096Z  INFO DESKTOP-JQ22B4E 2228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T11:32:50.107Z  INFO DESKTOP-JQ22B4E 2228 --- [main] org.example.Application                  : Started Application in 4.68 seconds (process running for 5.131)
+2023-08-23T11:33:58.193Z  INFO DESKTOP-JQ22B4E 2228 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:33:58.196Z  INFO DESKTOP-JQ22B4E 2228 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T11:33:58.200Z  INFO DESKTOP-JQ22B4E 2228 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T11:34:00.774Z  INFO DESKTOP-JQ22B4E 4688 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 4688 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T11:34:00.776Z  INFO DESKTOP-JQ22B4E 4688 --- [main] org.example.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T11:34:01.534Z  INFO DESKTOP-JQ22B4E 4688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T11:34:01.608Z  INFO DESKTOP-JQ22B4E 4688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2023-08-23T11:34:02.311Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T11:34:02.323Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T11:34:02.323Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T11:34:02.431Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T11:34:02.431Z  INFO DESKTOP-JQ22B4E 4688 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1596 ms
+2023-08-23T11:34:02.475Z  INFO DESKTOP-JQ22B4E 4688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T11:34:02.688Z  INFO DESKTOP-JQ22B4E 4688 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:81f3b492-7aeb-45a7-b25d-56ba57f80de6 user=SA
+2023-08-23T11:34:02.691Z  INFO DESKTOP-JQ22B4E 4688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T11:34:02.701Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:81f3b492-7aeb-45a7-b25d-56ba57f80de6'
+2023-08-23T11:34:02.899Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T11:34:03.320Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.324Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.341Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.353Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.364Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.365Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T11:34:03.384Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T11:34:03.394Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.398Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T11:34:03.401Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.402Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.444Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T11:34:03.446Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T11:34:03.446Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 6ms
+2023-08-23T11:34:03.450Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.451Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.453Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:34:03.458Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:34:03.459Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 6ms
+2023-08-23T11:34:03.460Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.461Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T11:34:03.463Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:34:03.463Z  INFO DESKTOP-JQ22B4E 4688 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T11:34:03.658Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T11:34:03.729Z  INFO DESKTOP-JQ22B4E 4688 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T11:34:03.732Z  INFO DESKTOP-JQ22B4E 4688 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T11:34:03.927Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:34:04.098Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T11:34:04.305Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:34:04.879Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T11:34:04.882Z  INFO DESKTOP-JQ22B4E 4688 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:34:05.209Z  WARN DESKTOP-JQ22B4E 4688 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T11:34:05.348Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T11:34:05.539Z  INFO DESKTOP-JQ22B4E 4688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T11:34:05.548Z  INFO DESKTOP-JQ22B4E 4688 --- [main] org.example.Application                  : Started Application in 5.352 seconds (process running for 5.789)
+2023-08-23T11:35:22.971Z  INFO DESKTOP-JQ22B4E 4688 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:35:22.975Z  INFO DESKTOP-JQ22B4E 4688 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T11:35:22.978Z  INFO DESKTOP-JQ22B4E 4688 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T11:35:25.853Z  INFO DESKTOP-JQ22B4E 13452 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 13452 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T11:35:25.855Z  INFO DESKTOP-JQ22B4E 13452 --- [main] org.example.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T11:35:26.689Z  INFO DESKTOP-JQ22B4E 13452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T11:35:26.758Z  INFO DESKTOP-JQ22B4E 13452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2023-08-23T11:35:27.596Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T11:35:27.609Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T11:35:27.610Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T11:35:27.734Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T11:35:27.734Z  INFO DESKTOP-JQ22B4E 13452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1813 ms
+2023-08-23T11:35:27.785Z  INFO DESKTOP-JQ22B4E 13452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T11:35:28.020Z  INFO DESKTOP-JQ22B4E 13452 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:644581e9-2a6c-4c27-897b-cafc255d8900 user=SA
+2023-08-23T11:35:28.021Z  INFO DESKTOP-JQ22B4E 13452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T11:35:28.034Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:644581e9-2a6c-4c27-897b-cafc255d8900'
+2023-08-23T11:35:28.236Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T11:35:28.711Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.715Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.721Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.727Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.732Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.733Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T11:35:28.750Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T11:35:28.752Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.753Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T11:35:28.757Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.759Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.805Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T11:35:28.810Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T11:35:28.811Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 8ms
+2023-08-23T11:35:28.814Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.815Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.818Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:35:28.820Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:35:28.820Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 4ms
+2023-08-23T11:35:28.824Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.825Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T11:35:28.828Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:35:28.828Z  INFO DESKTOP-JQ22B4E 13452 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T11:35:28.933Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T11:35:28.996Z  INFO DESKTOP-JQ22B4E 13452 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T11:35:28.998Z  INFO DESKTOP-JQ22B4E 13452 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T11:35:29.166Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:35:29.315Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T11:35:29.568Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:35:30.165Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T11:35:30.168Z  INFO DESKTOP-JQ22B4E 13452 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:35:30.535Z  WARN DESKTOP-JQ22B4E 13452 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T11:35:30.711Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T11:35:30.944Z  INFO DESKTOP-JQ22B4E 13452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T11:35:30.953Z  INFO DESKTOP-JQ22B4E 13452 --- [main] org.example.Application                  : Started Application in 5.771 seconds (process running for 6.289)
+2023-08-23T11:50:10.598Z  INFO DESKTOP-JQ22B4E 13452 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:50:10.601Z  INFO DESKTOP-JQ22B4E 13452 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T11:50:10.603Z  INFO DESKTOP-JQ22B4E 13452 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T11:50:13.616Z  INFO DESKTOP-JQ22B4E 2924 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 2924 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T11:50:13.618Z  INFO DESKTOP-JQ22B4E 2924 --- [main] org.example.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T11:50:14.502Z  INFO DESKTOP-JQ22B4E 2924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T11:50:14.577Z  INFO DESKTOP-JQ22B4E 2924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2023-08-23T11:50:15.421Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T11:50:15.432Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T11:50:15.432Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T11:50:15.541Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T11:50:15.541Z  INFO DESKTOP-JQ22B4E 2924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1860 ms
+2023-08-23T11:50:15.584Z  INFO DESKTOP-JQ22B4E 2924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T11:50:15.786Z  INFO DESKTOP-JQ22B4E 2924 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6e6e411f-d91d-4566-b182-3c6325e5f81c user=SA
+2023-08-23T11:50:15.788Z  INFO DESKTOP-JQ22B4E 2924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T11:50:15.799Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:6e6e411f-d91d-4566-b182-3c6325e5f81c'
+2023-08-23T11:50:15.962Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T11:50:16.432Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.436Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.444Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.447Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.455Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.459Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T11:50:16.478Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T11:50:16.481Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.483Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T11:50:16.485Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.486Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.542Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T11:50:16.546Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T11:50:16.546Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 9ms
+2023-08-23T11:50:16.552Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.553Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.560Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:50:16.562Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:50:16.563Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 8ms
+2023-08-23T11:50:16.564Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.566Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T11:50:16.568Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:50:16.568Z  INFO DESKTOP-JQ22B4E 2924 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T11:50:16.703Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T11:50:16.790Z  INFO DESKTOP-JQ22B4E 2924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T11:50:16.794Z  INFO DESKTOP-JQ22B4E 2924 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T11:50:17.022Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:50:17.186Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T11:50:17.434Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:50:18.036Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T11:50:18.038Z  INFO DESKTOP-JQ22B4E 2924 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:50:18.354Z  WARN DESKTOP-JQ22B4E 2924 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T11:50:18.505Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T11:50:18.733Z  INFO DESKTOP-JQ22B4E 2924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T11:50:18.745Z  INFO DESKTOP-JQ22B4E 2924 --- [main] org.example.Application                  : Started Application in 5.767 seconds (process running for 6.2)
+2023-08-23T11:53:45.320Z  INFO DESKTOP-JQ22B4E 2924 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:53:45.326Z  INFO DESKTOP-JQ22B4E 2924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T11:53:45.329Z  INFO DESKTOP-JQ22B4E 2924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T11:53:47.423Z  INFO DESKTOP-JQ22B4E 7876 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 7876 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T11:53:47.425Z  INFO DESKTOP-JQ22B4E 7876 --- [main] org.example.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T11:53:48.242Z  INFO DESKTOP-JQ22B4E 7876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T11:53:48.314Z  INFO DESKTOP-JQ22B4E 7876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2023-08-23T11:53:49.010Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T11:53:49.021Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T11:53:49.021Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T11:53:49.114Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T11:53:49.114Z  INFO DESKTOP-JQ22B4E 7876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1616 ms
+2023-08-23T11:53:49.158Z  INFO DESKTOP-JQ22B4E 7876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T11:53:49.362Z  INFO DESKTOP-JQ22B4E 7876 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:1503845b-7adc-494f-8179-a05cfd0881be user=SA
+2023-08-23T11:53:49.364Z  INFO DESKTOP-JQ22B4E 7876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T11:53:49.376Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1503845b-7adc-494f-8179-a05cfd0881be'
+2023-08-23T11:53:49.589Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T11:53:50.055Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.058Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.063Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.066Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.071Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.072Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T11:53:50.085Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T11:53:50.090Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.091Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T11:53:50.094Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.095Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.166Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T11:53:50.170Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T11:53:50.171Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 12ms
+2023-08-23T11:53:50.178Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.180Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.184Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:53:50.185Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:53:50.186Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 5ms
+2023-08-23T11:53:50.191Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.195Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T11:53:50.199Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:53:50.199Z  INFO DESKTOP-JQ22B4E 7876 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T11:53:50.366Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T11:53:50.460Z  INFO DESKTOP-JQ22B4E 7876 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T11:53:50.463Z  INFO DESKTOP-JQ22B4E 7876 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T11:53:50.729Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:53:50.890Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T11:53:51.109Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:53:51.736Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T11:53:51.739Z  INFO DESKTOP-JQ22B4E 7876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:53:52.038Z  WARN DESKTOP-JQ22B4E 7876 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T11:53:52.190Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T11:53:52.395Z  INFO DESKTOP-JQ22B4E 7876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T11:53:52.405Z  INFO DESKTOP-JQ22B4E 7876 --- [main] org.example.Application                  : Started Application in 5.542 seconds (process running for 5.926)
+2023-08-23T11:55:01.171Z  INFO DESKTOP-JQ22B4E 7876 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:55:01.174Z  INFO DESKTOP-JQ22B4E 7876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T11:55:01.176Z  INFO DESKTOP-JQ22B4E 7876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T11:55:03.100Z  INFO DESKTOP-JQ22B4E 14728 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 14728 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T11:55:03.102Z  INFO DESKTOP-JQ22B4E 14728 --- [main] org.example.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T11:55:03.767Z  INFO DESKTOP-JQ22B4E 14728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T11:55:03.826Z  INFO DESKTOP-JQ22B4E 14728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2023-08-23T11:55:04.515Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T11:55:04.528Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T11:55:04.528Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T11:55:04.625Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T11:55:04.625Z  INFO DESKTOP-JQ22B4E 14728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1473 ms
+2023-08-23T11:55:04.670Z  INFO DESKTOP-JQ22B4E 14728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T11:55:04.872Z  INFO DESKTOP-JQ22B4E 14728 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d97a7a3b-798d-48c6-9dc6-d6f5bdc11668 user=SA
+2023-08-23T11:55:04.874Z  INFO DESKTOP-JQ22B4E 14728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T11:55:04.904Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:d97a7a3b-798d-48c6-9dc6-d6f5bdc11668'
+2023-08-23T11:55:05.161Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T11:55:05.592Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.595Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.601Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.604Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.609Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.609Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T11:55:05.624Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T11:55:05.628Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.629Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T11:55:05.631Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.632Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.672Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T11:55:05.676Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T11:55:05.676Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 7ms
+2023-08-23T11:55:05.679Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.681Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.683Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:55:05.685Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T11:55:05.686Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 3ms
+2023-08-23T11:55:05.687Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.688Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T11:55:05.690Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T11:55:05.690Z  INFO DESKTOP-JQ22B4E 14728 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T11:55:05.771Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T11:55:05.844Z  INFO DESKTOP-JQ22B4E 14728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T11:55:05.848Z  INFO DESKTOP-JQ22B4E 14728 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T11:55:06.010Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:55:06.154Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T11:55:06.379Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T11:55:06.915Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T11:55:06.918Z  INFO DESKTOP-JQ22B4E 14728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:55:07.190Z  WARN DESKTOP-JQ22B4E 14728 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T11:55:07.321Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T11:55:07.504Z  INFO DESKTOP-JQ22B4E 14728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T11:55:07.512Z  INFO DESKTOP-JQ22B4E 14728 --- [main] org.example.Application                  : Started Application in 4.927 seconds (process running for 5.293)
+2023-08-23T11:57:05.793Z  INFO DESKTOP-JQ22B4E 14728 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T11:57:05.796Z  INFO DESKTOP-JQ22B4E 14728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T11:57:05.798Z  INFO DESKTOP-JQ22B4E 14728 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T11:57:08.171Z  INFO DESKTOP-JQ22B4E 9432 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 9432 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T11:57:08.172Z  INFO DESKTOP-JQ22B4E 9432 --- [main] org.example.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-08-23T11:57:08.834Z  INFO DESKTOP-JQ22B4E 9432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T11:57:08.892Z  INFO DESKTOP-JQ22B4E 9432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2023-08-23T11:57:09.542Z  INFO DESKTOP-JQ22B4E 9432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T11:57:09.554Z  INFO DESKTOP-JQ22B4E 9432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T11:57:09.554Z  INFO DESKTOP-JQ22B4E 9432 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T11:57:09.662Z  INFO DESKTOP-JQ22B4E 9432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T11:57:09.663Z  INFO DESKTOP-JQ22B4E 9432 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1438 ms
+2023-08-23T11:57:09.685Z ERROR DESKTOP-JQ22B4E 9432 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+2023-08-23T11:57:09.724Z  INFO DESKTOP-JQ22B4E 9432 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-23T11:57:09.731Z  WARN DESKTOP-JQ22B4E 9432 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2023-08-23T11:57:09.740Z  INFO DESKTOP-JQ22B4E 9432 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-23T11:57:09.772Z ERROR DESKTOP-JQ22B4E 9432 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.example.Application.main(Application.java:21) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:489) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-3.1.2.jar:3.1.2]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:201) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4886) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:846) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:241) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:918) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.1.2.jar:3.1.2]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 53 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1640) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2143) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2137) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:86) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.withThreadContextClassLoader(H2ConsoleAutoConfiguration.java:78) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 54 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 77 common frames omitted
+Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.boot.jdbc.DatabaseDriver.fromJdbcUrl(DatabaseDriver.java:288) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:180) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 78 common frames omitted
+
+2023-08-23T12:02:19.954Z  INFO DESKTOP-JQ22B4E 16860 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 16860 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T12:02:19.958Z  INFO DESKTOP-JQ22B4E 16860 --- [main] org.example.Application                  : The following 1 profile is active: "dev"
+2023-08-23T12:02:20.756Z  INFO DESKTOP-JQ22B4E 16860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T12:02:20.829Z  INFO DESKTOP-JQ22B4E 16860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2023-08-23T12:02:21.605Z  INFO DESKTOP-JQ22B4E 16860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T12:02:21.620Z  INFO DESKTOP-JQ22B4E 16860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T12:02:21.620Z  INFO DESKTOP-JQ22B4E 16860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T12:02:21.745Z  INFO DESKTOP-JQ22B4E 16860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T12:02:21.745Z  INFO DESKTOP-JQ22B4E 16860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1724 ms
+2023-08-23T12:02:21.768Z ERROR DESKTOP-JQ22B4E 16860 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+2023-08-23T12:02:21.810Z  INFO DESKTOP-JQ22B4E 16860 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-23T12:02:21.821Z  WARN DESKTOP-JQ22B4E 16860 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2023-08-23T12:02:21.832Z  INFO DESKTOP-JQ22B4E 16860 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-23T12:02:21.860Z ERROR DESKTOP-JQ22B4E 16860 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.example.Application.main(Application.java:21) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:489) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-3.1.2.jar:3.1.2]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:201) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4886) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:846) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:241) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:918) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.1.2.jar:3.1.2]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 53 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1640) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2143) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2137) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:86) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.withThreadContextClassLoader(H2ConsoleAutoConfiguration.java:78) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 54 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 77 common frames omitted
+Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.boot.jdbc.DatabaseDriver.fromJdbcUrl(DatabaseDriver.java:288) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:180) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 78 common frames omitted
+
+2023-08-23T12:03:57.621Z  INFO DESKTOP-JQ22B4E 15728 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 15728 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T12:03:57.622Z  INFO DESKTOP-JQ22B4E 15728 --- [main] org.example.Application                  : The following 1 profile is active: "dev"
+2023-08-23T12:03:58.495Z  INFO DESKTOP-JQ22B4E 15728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T12:03:58.562Z  INFO DESKTOP-JQ22B4E 15728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-08-23T12:03:59.344Z  INFO DESKTOP-JQ22B4E 15728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T12:03:59.354Z  INFO DESKTOP-JQ22B4E 15728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T12:03:59.355Z  INFO DESKTOP-JQ22B4E 15728 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T12:03:59.470Z  INFO DESKTOP-JQ22B4E 15728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T12:03:59.470Z  INFO DESKTOP-JQ22B4E 15728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1781 ms
+2023-08-23T12:03:59.496Z ERROR DESKTOP-JQ22B4E 15728 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+2023-08-23T12:03:59.531Z  INFO DESKTOP-JQ22B4E 15728 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-23T12:03:59.562Z  WARN DESKTOP-JQ22B4E 15728 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2023-08-23T12:03:59.583Z  INFO DESKTOP-JQ22B4E 15728 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-23T12:03:59.604Z ERROR DESKTOP-JQ22B4E 15728 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.example.Application.main(Application.java:21) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:489) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-3.1.2.jar:3.1.2]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:201) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4886) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:846) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:241) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:918) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.1.2.jar:3.1.2]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 53 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1640) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2143) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2137) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:86) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.withThreadContextClassLoader(H2ConsoleAutoConfiguration.java:78) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 54 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 77 common frames omitted
+Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.boot.jdbc.DatabaseDriver.fromJdbcUrl(DatabaseDriver.java:288) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:180) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 78 common frames omitted
+
+2023-08-23T12:08:05.316Z  INFO DESKTOP-JQ22B4E 14024 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 14024 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T12:08:05.318Z  INFO DESKTOP-JQ22B4E 14024 --- [main] org.example.Application                  : The following 1 profile is active: "dev"
+2023-08-23T12:08:06.000Z  INFO DESKTOP-JQ22B4E 14024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T12:08:06.060Z  INFO DESKTOP-JQ22B4E 14024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2023-08-23T12:08:06.658Z  INFO DESKTOP-JQ22B4E 14024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T12:08:06.668Z  INFO DESKTOP-JQ22B4E 14024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T12:08:06.668Z  INFO DESKTOP-JQ22B4E 14024 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T12:08:06.760Z  INFO DESKTOP-JQ22B4E 14024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T12:08:06.760Z  INFO DESKTOP-JQ22B4E 14024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1389 ms
+2023-08-23T12:08:06.779Z ERROR DESKTOP-JQ22B4E 14024 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+2023-08-23T12:08:06.813Z  INFO DESKTOP-JQ22B4E 14024 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-23T12:08:06.822Z  WARN DESKTOP-JQ22B4E 14024 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2023-08-23T12:08:06.830Z  INFO DESKTOP-JQ22B4E 14024 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-23T12:08:06.850Z ERROR DESKTOP-JQ22B4E 14024 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:602) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.example.Application.main(Application.java:21) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:489) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-3.1.2.jar:3.1.2]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:201) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4886) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:846) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:241) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:918) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.1.2.jar:3.1.2]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 53 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1640) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2143) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2137) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:86) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.withThreadContextClassLoader(H2ConsoleAutoConfiguration.java:78) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:69) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 54 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: URL must start with 'jdbc'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 77 common frames omitted
+Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.11.jar:6.0.11]
+	at org.springframework.boot.jdbc.DatabaseDriver.fromJdbcUrl(DatabaseDriver.java:288) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:180) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117) ~[spring-boot-autoconfigure-3.1.2.jar:3.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 78 common frames omitted
+
+2023-08-23T12:08:32.794Z  INFO DESKTOP-JQ22B4E 8268 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 8268 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T12:08:32.796Z  INFO DESKTOP-JQ22B4E 8268 --- [main] org.example.Application                  : The following 1 profile is active: "dev"
+2023-08-23T12:08:33.459Z  INFO DESKTOP-JQ22B4E 8268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T12:08:33.520Z  INFO DESKTOP-JQ22B4E 8268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-08-23T12:08:34.122Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T12:08:34.133Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T12:08:34.133Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T12:08:34.226Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T12:08:34.226Z  INFO DESKTOP-JQ22B4E 8268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1377 ms
+2023-08-23T12:08:34.264Z  INFO DESKTOP-JQ22B4E 8268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T12:08:34.444Z  INFO DESKTOP-JQ22B4E 8268 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:news user=SA
+2023-08-23T12:08:34.445Z  INFO DESKTOP-JQ22B4E 8268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T12:08:34.455Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:news'
+2023-08-23T12:08:34.622Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T12:08:34.958Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:34.961Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:34.966Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:34.969Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:34.973Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:34.974Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T12:08:34.986Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T12:08:34.991Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:34.992Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T12:08:34.994Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:34.996Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:35.035Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T12:08:35.037Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T12:08:35.037Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 5ms
+2023-08-23T12:08:35.041Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:35.042Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:35.044Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T12:08:35.046Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T12:08:35.046Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 3ms
+2023-08-23T12:08:35.048Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:35.049Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T12:08:35.051Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:08:35.051Z  INFO DESKTOP-JQ22B4E 8268 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T12:08:35.131Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T12:08:35.195Z  INFO DESKTOP-JQ22B4E 8268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T12:08:35.199Z  INFO DESKTOP-JQ22B4E 8268 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T12:08:35.366Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T12:08:35.535Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T12:08:35.748Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T12:08:36.317Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T12:08:36.319Z  INFO DESKTOP-JQ22B4E 8268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T12:08:36.626Z  WARN DESKTOP-JQ22B4E 8268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T12:08:36.773Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T12:08:36.970Z  INFO DESKTOP-JQ22B4E 8268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T12:08:36.978Z  INFO DESKTOP-JQ22B4E 8268 --- [main] org.example.Application                  : Started Application in 4.704 seconds (process running for 5.074)
+2023-08-23T12:10:37.893Z  INFO DESKTOP-JQ22B4E 8268 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T12:10:37.897Z  INFO DESKTOP-JQ22B4E 8268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T12:10:37.899Z  INFO DESKTOP-JQ22B4E 8268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T12:10:40.853Z  INFO DESKTOP-JQ22B4E 784 --- [main] org.example.Application                  : Starting Application using Java 19.0.2 with PID 784 (C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails\target\classes started by fatima.noor in C:\IntelliJ IDEA Community Edition 2023.2\Workspace\LoggingDetails)
+2023-08-23T12:10:40.855Z  INFO DESKTOP-JQ22B4E 784 --- [main] org.example.Application                  : The following 1 profile is active: "dev"
+2023-08-23T12:10:41.604Z  INFO DESKTOP-JQ22B4E 784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T12:10:41.666Z  INFO DESKTOP-JQ22B4E 784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-08-23T12:10:42.337Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-08-23T12:10:42.348Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T12:10:42.349Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-23T12:10:42.454Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T12:10:42.455Z  INFO DESKTOP-JQ22B4E 784 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1537 ms
+2023-08-23T12:10:42.499Z  INFO DESKTOP-JQ22B4E 784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T12:10:42.690Z  INFO DESKTOP-JQ22B4E 784 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:news user=SA
+2023-08-23T12:10:42.692Z  INFO DESKTOP-JQ22B4E 784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T12:10:42.702Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:news'
+2023-08-23T12:10:42.873Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-23T12:10:43.268Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.271Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.276Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.279Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.284Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.284Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-23T12:10:43.297Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-23T12:10:43.303Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.304Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-23T12:10:43.306Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.308Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.376Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.changelog                      : Table news created
+2023-08-23T12:10:43.379Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.changelog                      : Primary key added to news (id)
+2023-08-23T12:10:43.381Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::news team ran successfully in 13ms
+2023-08-23T12:10:43.386Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.387Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.393Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T12:10:43.395Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.changelog                      : New row inserted into news
+2023-08-23T12:10:43.417Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::news team ran successfully in 28ms
+2023-08-23T12:10:43.428Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.429Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase                                : Update command completed successfully.
+2023-08-23T12:10:43.432Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-23T12:10:43.432Z  INFO DESKTOP-JQ22B4E 784 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-23T12:10:43.569Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T12:10:43.647Z  INFO DESKTOP-JQ22B4E 784 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-23T12:10:43.649Z  INFO DESKTOP-JQ22B4E 784 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-23T12:10:43.835Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T12:10:43.999Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-23T12:10:44.239Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-23T12:10:44.802Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T12:10:44.805Z  INFO DESKTOP-JQ22B4E 784 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T12:10:45.100Z  WARN DESKTOP-JQ22B4E 784 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-23T12:10:45.234Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-23T12:10:45.427Z  INFO DESKTOP-JQ22B4E 784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-08-23T12:10:45.441Z  INFO DESKTOP-JQ22B4E 784 --- [main] org.example.Application                  : Started Application in 5.171 seconds (process running for 5.588)
+2023-08-23T12:13:07.170Z  INFO DESKTOP-JQ22B4E 784 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T12:13:07.174Z  INFO DESKTOP-JQ22B4E 784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T12:13:07.176Z  INFO DESKTOP-JQ22B4E 784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
