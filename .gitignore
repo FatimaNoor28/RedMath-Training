@@ -1,0 +1,23 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+target/
+*.log
+mvnw
+mvnw.cmd
+
+# Spring Boot
+logs/
+*.jar
+
+# IDE-specific files
+*.ipr
+*.iws
+*.DS_Store
+
+# Miscellaneous
+*.class
