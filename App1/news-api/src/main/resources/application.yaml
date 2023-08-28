@@ -1,0 +1,21 @@
+logging:
+  level:
+    sql: debug
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
+
+#  security:
+#    user:
+#      name: test
+#      password: test
+#      roles: test
+
+server:
+  port: 9080
+

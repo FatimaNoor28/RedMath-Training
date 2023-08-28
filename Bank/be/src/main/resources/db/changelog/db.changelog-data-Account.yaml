@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: data-Account
+      author: bank team
+      changes:
+        - insert:
+            tableName: Account
+            columns:
+              - column:
+                  name: ID
+                  value: '1'
+              - column:
+                  name: PASSWORD
+                  value: 'password1'
+              - column:
+                  name: NAME
+                  value: 'account1'
+              - column:
+                  name: EMAIL
+                  value: 'email1'
+              - column:
+                  name: ADDRESS
+                  value: 'address1'
+        - insert:
+            tableName: Account
+            columns:
+              - column:
+                  name: ID
+                  value: '2'
+              - column:
+                  name: PASSWORD
+                  value: 'password2'
+              - column:
+                  name: NAME
+                  value: 'account2'
+              - column:
+                  name: EMAIL
+                  value: 'email2'
+              - column:
+                  name: ADDRESS
+                  value: 'address2'
+
+

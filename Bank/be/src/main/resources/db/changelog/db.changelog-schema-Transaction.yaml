@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-Transaction
+      author: bank team
+      changes:
+        - createTable:
+            tableName: Transaction
+            columns:
+              - column:
+                  name: TRANSACTION_ID
+                  autoIncrement: true
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: Balance_id
+                  type: bigint
+              - column:
+                  name: DESCRIPTION
+                  type: varchar(255)
+              - column:
+                  name: AMOUNT
+                  type: bigint
+              - column:
+                  name: DB/CR Indicator
+                  type: varchar(250)
+              - column:
+                  name: DATE
+                  type: DATE
+        - addForeignKeyConstraint:
+            baseTableName: Transaction
+            baseColumnNames: Balance_id
+            referencedTableName: Balance
+            referencedColumnNames: BALANCE_ID
+            constraintName: fk_transaction_balance

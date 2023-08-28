@@ -1,0 +1,4 @@
+<modules>
+    <module>news-api    </module>
+    <module>news-ui  </module>
+</modules>

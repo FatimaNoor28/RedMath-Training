@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: data-Account
+      author: bank team
+      changes:
+        - insert:
+            tableName: Balance
+            columns:
+              - column:
+                  name: BALANCE_ID
+                  value: '1'
+              - column:
+                  name: Account_id
+                  value: '1'
+              - column:
+                  name: AMOUNT
+                  value: '10000'
+              - column:
+                  name: DB/CR Indicator
+                  value: 'yes'
+              - column:
+                  name: DATE
+                  value: '2000-01-01'
+        - insert:
+            tableName: Balance
+            columns:
+              - column:
+                  name: BALANCE_ID
+                  value: '2'
+              - column:
+                  name: Account_id
+                  value: '2'
+              - column:
+                  name: AMOUNT
+                  value: '20000'
+              - column:
+                  name: DB/CR Indicator
+                  value: 'no'
+              - column:
+                  name: DATE
+                  value: '2023-01-01'
