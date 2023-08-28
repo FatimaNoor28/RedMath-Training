@@ -16,7 +16,7 @@ databaseChangeLog:
                   name: AMOUNT
                   value: '10000'
               - column:
-                  name: DB/CR Indicator
+                  name: "DB/CR Indicator"
                   value: 'yes'
               - column:
                   name: DATE
@@ -34,7 +34,7 @@ databaseChangeLog:
                   name: AMOUNT
                   value: '20000'
               - column:
-                  name: DB/CR Indicator
+                  name: "DB/CR Indicator"
                   value: 'no'
               - column:
                   name: DATE

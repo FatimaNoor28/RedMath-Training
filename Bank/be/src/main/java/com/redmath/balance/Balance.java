@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
+@Entity(name = "Balance")
 public class Balance {
     @Id
     private Long BalanceId;

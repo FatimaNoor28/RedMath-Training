@@ -17,9 +17,9 @@ databaseChangeLog:
   - include:
       file: db.changelog-data-Transaction.yaml
       relativeToChangelogFile: true
-#  - include:
-#      file: db.changelog-schema-Users.yaml
-#      relativeToChangelogFile: true
-#  - include:
-#      file: db.changelog-data-Users.yaml
-#      relativeToChangelogFile: true
+  - include:
+      file: db.changelog-schema-Users.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: db.changelog-data-Users.yaml
+      relativeToChangelogFile: true

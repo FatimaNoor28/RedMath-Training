@@ -20,7 +20,7 @@ databaseChangeLog:
                   name: AMOUNT
                   type: bigint
               - column:
-                  name: DB/CR Indicator
+                  name: "DB/CR Indicator"
                   type: varchar(250)
               - column:
                   name: DATE
