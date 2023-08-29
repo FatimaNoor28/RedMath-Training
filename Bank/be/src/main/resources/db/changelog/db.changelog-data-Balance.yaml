@@ -7,35 +7,36 @@ databaseChangeLog:
             tableName: Balance
             columns:
               - column:
-                  name: BALANCE_ID
+                  name: balance_id
                   value: '1'
               - column:
-                  name: Account_id
+                  name: account_id
                   value: '1'
               - column:
-                  name: AMOUNT
+                  name: amount
                   value: '10000'
               - column:
-                  name: "DB/CR Indicator"
+                  name: DB_CR
                   value: 'yes'
               - column:
-                  name: DATE
+                  name: date
                   value: '2000-01-01'
+
         - insert:
             tableName: Balance
             columns:
               - column:
-                  name: BALANCE_ID
+                  name: balance_id
                   value: '2'
               - column:
-                  name: Account_id
+                  name: account_id
                   value: '2'
               - column:
-                  name: AMOUNT
+                  name: amount
                   value: '20000'
               - column:
-                  name: "DB/CR Indicator"
+                  name: DB_CR
                   value: 'no'
               - column:
-                  name: DATE
+                  name: date
                   value: '2023-01-01'

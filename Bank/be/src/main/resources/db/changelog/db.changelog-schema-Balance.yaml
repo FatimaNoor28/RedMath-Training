@@ -7,27 +7,27 @@ databaseChangeLog:
             tableName: Balance
             columns:
               - column:
-                  name: BALANCE_ID
+                  name: balance_id
                   type: bigint
                   autoIncrement: true
                   constraints:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: Account_id
+                  name: account_id
                   type: bigint
               - column:
-                  name: AMOUNT
+                  name: amount
                   type: bigint
               - column:
-                  name: "DB/CR Indicator"
+                  name: DB_CR
                   type: varchar(250)
               - column:
-                  name: DATE
+                  name: date
                   type: DATE
         - addForeignKeyConstraint:
             baseTableName: Balance
-            baseColumnNames: Account_id
+            baseColumnNames: account_id
             referencedTableName: Account
-            referencedColumnNames: ID
+            referencedColumnNames: account_id
             constraintName: fk_balance_account

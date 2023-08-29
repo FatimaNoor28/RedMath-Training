@@ -7,30 +7,30 @@ databaseChangeLog:
             tableName: Transaction
             columns:
               - column:
-                  name: TRANSACTION_ID
+                  name: transaction_id
                   autoIncrement: true
                   type: bigint
                   constraints:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: Balance_id
+                  name: balance_id
                   type: bigint
               - column:
-                  name: DESCRIPTION
+                  name: description
                   type: varchar(255)
               - column:
-                  name: AMOUNT
+                  name: amount
                   type: bigint
               - column:
-                  name: DB/CR Indicator
+                  name: DB_CR
                   type: varchar(250)
               - column:
-                  name: DATE
+                  name: transaction_date
                   type: DATE
         - addForeignKeyConstraint:
             baseTableName: Transaction
-            baseColumnNames: Balance_id
+            baseColumnNames: balance_id
             referencedTableName: Balance
-            referencedColumnNames: BALANCE_ID
+            referencedColumnNames: balance_id
             constraintName: fk_transaction_balance

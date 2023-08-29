@@ -7,20 +7,27 @@ import jakarta.persistence.*;
 public class Transaction {
     @Id
     @GeneratedValue
-    private Long TransactionId;
-    @ManyToOne
+    private Long transaction_id;
+//    @ManyToOne
+//    @JoinColumn(name = "balance_id", referencedColumnName = "balance_id")
+//    private Balance balance;
     @JoinColumn(name = "balance_id", referencedColumnName = "balance_id")
-    private Balance balance;
+    private Long balance_id;
     private String description;
     private Long amount;
-    @Column(name = "db_cr_indicator")
-    private String dbCrIndicator;
+    private String DB_CR;
     @Temporal(TemporalType.DATE)
     @Column(name = "transaction_date")
     private Date transactionDate;
 
     public Long getId() {
-        return TransactionId;
+        return transaction_id;
+    }
+    public void setId(Long id) {
+        this.transaction_id = id;
+    }
+    public Long getBalance_id() {
+        return balance_id;
     }
 
     public void setDescription(String description) {
@@ -36,10 +43,10 @@ public class Transaction {
     public void setAmount(Long amount) { this.amount = amount;    }
 
     public void setDB_CR(String DB_CR) {
-        this.dbCrIndicator = DB_CR;
+        this.DB_CR = DB_CR;
     }
 
-    public String getDB_CR() { return dbCrIndicator;}
+    public String getDB_CR() { return DB_CR;}
 
     public Date getDate() {
         return transactionDate;

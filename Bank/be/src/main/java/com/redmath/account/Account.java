@@ -7,17 +7,25 @@ import jakarta.persistence.Id;
 @Entity
 public class Account {
     @Id
-    private Long id;
+    private Long account_id;
     private String password;
     private String name;
     private String email;
     private String address;
+    private String roles;
+    public String getRoles() {
+        return roles;
+    }
+    public void setRoles(String roles) {
+        this.roles = roles;
+    }
+
     public Long getId() {
-        return id;
+        return account_id;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.account_id = id;
     }
 
     public String getPassword() {

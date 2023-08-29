@@ -11,31 +11,26 @@ databaseChangeLog:
                   value: '1'
               - column:
                   name: user_name
-                  value: admin
+                  value: Admin
               - column:
                   name: password
                   value: '{noop}admin'
               - column:
                   name: roles
-                  value: ADMIN
-              - column:
-                  name: status
-                  value: ACTIVE
+                  value: Admin
+
         - insert:
             tableName: users
             columns:
               - column:
-                  name: id
+                  name: user_id
                   value: '2'
               - column:
                   name: user_name
-                  value: editor
+                  value: 'Account Holder'
               - column:
                   name: password
-                  value: '{noop}editor'
+                  value: '{noop}holder'
               - column:
                   name: roles
-                  value: REPORTER,EDITOR
-              - column:
-                  name: status
-                  value: ACTIVE
+                  value: AccountHolder

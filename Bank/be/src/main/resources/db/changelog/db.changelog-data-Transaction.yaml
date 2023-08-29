@@ -7,41 +7,41 @@ databaseChangeLog:
             tableName: Transaction
             columns:
               - column:
-                  name: TRANSACTION_ID
+                  name: transaction_id
                   value: '1'
               - column:
-                  name: Balance_id
+                  name: balance_id
                   value: '1'
               - column:
-                  name: DESCRIPTION
+                  name: description
                   value: 'Description1'
               - column:
-                  name: AMOUNT
+                  name: amount
                   value: '10000'
               - column:
-                  name: DB/CR Indicator
+                  name: DB_CR
                   value: 'yes'
               - column:
-                  name: DATE
+                  name: transaction_date
                   value: '2000-01-01'
         - insert:
-            tableName: Balance
+            tableName: Transaction
             columns:
               - column:
-                  name: TRANSACTION_ID
+                  name: transaction_id
                   value: '2'
               - column:
-                  name: Balance_id
+                  name: balance_id
                   value: '2'
               - column:
-                  name: DESCRIPTION
+                  name: description
                   value: 'Description2'
               - column:
-                  name: AMOUNT
+                  name: amount
                   value: '20000'
               - column:
-                  name: DB/CR Indicator
+                  name: DB_CR
                   value: 'no'
               - column:
-                  name: DATE
+                  name: transaction_date
                   value: '2023-01-01'

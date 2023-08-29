@@ -4,7 +4,9 @@
   "description": "news-ui",
   "main": "src/index.js",
   "dependencies": {
+    "angular": "^1.8.3",
     "async": "^2.6.4",
+    "bootstrap": "^5.3.1",
     "call-bind": "^1.0.2",
     "colors": "^1.0.3",
     "corser": "^2.0.1",
@@ -36,9 +38,12 @@
     "wordwrap": "^0.0.3"
   },
   "devDependencies": {
+    "cpx": "^1.5.0",
     "http-server": "^14.1.1"
   },
   "scripts": {
+    "postinstall": "npm run copy-libs",
+    "copy-libs": "cpx node_modules/{angular,angular-*,bootstrap/dist,jquery/dist}/**/* src/lib -u -C",
     "start": "http-server src -a localhost -p 8080 -c-1"
   },
   "author": "",

@@ -10,26 +10,32 @@ import jakarta.persistence.ManyToOne;
 @Entity(name = "Balance")
 public class Balance {
     @Id
-    private Long BalanceId;
-    @ManyToOne
+    private Long balance_id;
+//
     @JoinColumn(name = "account_id", referencedColumnName = "account_id")
-    private Account account;
-    private Long Amount;
+    private Long account_id;
+    private Long amount;
     private String DB_CR;
-    private Date Date;
+    private Date date;
 
     public Long getId() {
-        return BalanceId;
+        return balance_id;
+    }
+    public Long getAccount_id() {
+        return account_id;
+    }
+    public void setAccount_id(Long id) {
+        this.account_id = id;
     }
 
     public void setId(Long BalanceId) {
-        this.BalanceId = BalanceId;
+        this.balance_id = BalanceId;
     }
 
     public Long getAmount() {
-        return Amount;
+        return amount;
     }
-    public void setAmount(Long amount) { this.Amount = amount;    }
+    public void setAmount(Long amount) { this.amount = amount;    }
 
     public void setDB_CR(String DB_CR) {
         this.DB_CR = DB_CR;
@@ -38,10 +44,10 @@ public class Balance {
     public String getDB_CR() { return DB_CR;}
 
     public Date getDate() {
-        return Date;
+        return date;
     }
 
     public void setDate(Date Date) {
-        this.Date = Date;
+        this.date = Date;
     }
 }

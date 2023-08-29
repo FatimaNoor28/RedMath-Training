@@ -7,27 +7,36 @@ databaseChangeLog:
             tableName: Account
             columns:
               - column:
-                  name: ID
+                  name: account_id
                   type: bigint
+                  autoIncrement: true
                   constraints:
+                    primaryKey: true
                     nullable: false
+#              - column:
+#                  name: user_id
+#                  type: bigint
               - column:
-                  name: PASSWORD
+                  name: password
                   type: varchar(255)
               - column:
-                  name: NAME
+                  name: name
                   type: varchar(255)
               - column:
-                  name: EMAIL
+                  name: email
                   type: varchar(255)
               - column:
-                  name: ADDRESS
+                  name: address
                   type: varchar(1000)
-        - addPrimaryKey:
-            tableName: Account
-            columnNames: ID
-            constraintName: Account_pk
-
+              - column:
+                  name: roles
+                  type: varchar(255)
+#        - addForeignKeyConstraint:
+#            baseTableName: Account
+#            baseColumnNames: user_id
+#            referencedTableName: users
+#            referencedColumnNames: user_id
+#            constraintName: fk_account_user
 
 
 
