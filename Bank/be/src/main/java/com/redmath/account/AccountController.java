@@ -18,17 +18,18 @@ public class AccountController {
     public AccountController(AccountService service){ this.service = service; }
 
     @RequestMapping()
-    @PreAuthorize("hasAuthority('ADMIN')")
+//    @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<List<Account>> findAll(){ return ResponseEntity.ok(service.findAll()); }
 
 
     @RequestMapping("/{id}")
-    @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
+//    @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
     public ResponseEntity<Account> findById(@PathVariable("id") Long id){
         Optional<Account> account = service.findById(id);
-        if(account.isEmpty()){ResponseEntity.notFound().build(); }
-        Account toAccount = account.get();
-        return ResponseEntity.ok(toAccount);
+        if (account.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(account.get());
 
     }
 
