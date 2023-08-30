@@ -20,8 +20,8 @@ public class NewsController {
     }
 
     @GetMapping()
-    public ResponseEntity<List<News>> findAll(){
-        return ResponseEntity.ok(service.findAll());
+    public ResponseEntity<Map<String, List<News>>> findAll(){
+        return ResponseEntity.ok(Map.of("content", service.findAll()));
     }
 
     @GetMapping("/{id}")
