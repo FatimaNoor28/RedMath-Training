@@ -1,5 +1,4 @@
 package com.redmath.balance;
-//import java.time.LocalDateTime;
 import java.util.Date;
 import com.redmath.account.Account;
 import jakarta.persistence.Entity;
@@ -11,8 +10,6 @@ import jakarta.persistence.ManyToOne;
 public class Balance {
     @Id
     private Long balance_id;
-//
-    @JoinColumn(name = "account_id", referencedColumnName = "account_id")
     private Long account_id;
     private Long amount;
     private String DB_CR;

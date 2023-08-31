@@ -9,19 +9,17 @@ import jakarta.persistence.Id;
 public class User {
 
     @Id
-    private Long user_id;
+    private Long userId;
     private String userName;
     private String password;
     private String roles;
-    private Integer loginAttempts;
-    private LocalDateTime loginAt;
 
     public Long getId() {
-        return user_id;
+        return userId;
     }
 
     public void setId(Long id) {
-        this.user_id = id;
+        this.userId = id;
     }
 
     public String getUserName() {
@@ -48,19 +46,4 @@ public class User {
         this.roles = roles;
     }
 
-    public Integer getLoginAttempts() {
-        return loginAttempts;
-    }
-
-    public void setLoginAttempts(Integer loginAttempts) {
-        this.loginAttempts = loginAttempts;
-    }
-
-    public LocalDateTime getLoginAt() {
-        return loginAt;
-    }
-
-    public void setLoginAt(LocalDateTime loginAt) {
-        this.loginAt = loginAt;
-    }
 }

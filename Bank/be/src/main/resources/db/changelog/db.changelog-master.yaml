@@ -1,10 +1,11 @@
 databaseChangeLog:
   - include:
-      file: db.changelog-schema-Admins.yaml
+      file: db.changelog-schema-Users.yaml
       relativeToChangelogFile: true
   - include:
-      file: db.changelog-data-Admins.yaml
+      file: db.changelog-data-Users.yaml
       relativeToChangelogFile: true
+      context: local
   - include:
       file: db.changelog-schema-Account.yaml
       relativeToChangelogFile: true

@@ -3,7 +3,7 @@ package com.redmath.admins;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-import java.time.LocalDateTime;
+//import java.time.LocalDateTime;
 
 @Entity(name = "Admins")
 public class Admin {
@@ -13,8 +13,6 @@ public class Admin {
     private String user_name;
     private String password;
     private String role;
-    private Integer loginAttempts;
-    private LocalDateTime loginAt;
 
     public Long getId() {
         return user_id;
@@ -46,21 +44,5 @@ public class Admin {
 
     public void setRoles(String roles) {
         this.role = roles;
-    }
-
-    public Integer getLoginAttempts() {
-        return loginAttempts;
-    }
-
-    public void setLoginAttempts(Integer loginAttempts) {
-        this.loginAttempts = loginAttempts;
-    }
-
-    public LocalDateTime getLoginAt() {
-        return loginAt;
-    }
-
-    public void setLoginAt(LocalDateTime loginAt) {
-        this.loginAt = loginAt;
     }
 }

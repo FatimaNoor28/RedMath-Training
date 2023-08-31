@@ -10,7 +10,7 @@ databaseChangeLog:
                   name: transaction_id
                   value: '1'
               - column:
-                  name: balance_id
+                  name: account_id
                   value: '1'
               - column:
                   name: description
@@ -31,7 +31,7 @@ databaseChangeLog:
                   name: transaction_id
                   value: '2'
               - column:
-                  name: balance_id
+                  name: account_id
                   value: '2'
               - column:
                   name: description

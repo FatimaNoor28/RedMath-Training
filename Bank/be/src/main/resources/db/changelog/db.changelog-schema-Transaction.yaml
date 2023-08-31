@@ -14,7 +14,7 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: balance_id
+                  name: account_id
                   type: bigint
               - column:
                   name: description
@@ -28,9 +28,9 @@ databaseChangeLog:
               - column:
                   name: transaction_date
                   type: DATE
-        - addForeignKeyConstraint:
-            baseTableName: Transaction
-            baseColumnNames: balance_id
-            referencedTableName: Balance
-            referencedColumnNames: balance_id
-            constraintName: fk_transaction_balance
+#        - addForeignKeyConstraint:
+#            baseTableName: Transaction
+#            baseColumnNames: balance_id
+#            referencedTableName: Balance
+#            referencedColumnNames: balance_id
+#            constraintName: fk_transaction_balance

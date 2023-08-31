@@ -25,9 +25,9 @@ databaseChangeLog:
               - column:
                   name: date
                   type: DATE
-        - addForeignKeyConstraint:
-            baseTableName: Balance
-            baseColumnNames: account_id
-            referencedTableName: Account
-            referencedColumnNames: account_id
-            constraintName: fk_balance_account
+#        - addForeignKeyConstraint:
+#            baseTableName: Balance
+#            baseColumnNames: account_id
+#            referencedTableName: Account
+#            referencedColumnNames: account_id
+#            constraintName: fk_balance_account

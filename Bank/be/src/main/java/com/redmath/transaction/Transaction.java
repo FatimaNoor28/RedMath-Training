@@ -3,16 +3,12 @@ import java.util.Date;
 import com.redmath.balance.Balance;
 import jakarta.persistence.*;
 
-@Entity(name = "Transactions")
+@Entity(name = "Transaction")
 public class Transaction {
     @Id
     @GeneratedValue
     private Long transaction_id;
-//    @ManyToOne
-//    @JoinColumn(name = "balance_id", referencedColumnName = "balance_id")
-//    private Balance balance;
-    @JoinColumn(name = "balance_id", referencedColumnName = "balance_id")
-    private Long balance_id;
+    private Long account_id;
     private String description;
     private Long amount;
     private String DB_CR;
@@ -23,13 +19,17 @@ public class Transaction {
     public Long getId() {
         return transaction_id;
     }
+
     public void setId(Long id) {
         this.transaction_id = id;
     }
     public Long getBalance_id() {
-        return balance_id;
+        return account_id;
     }
 
+    public void setBalance_id(Long account_id) {
+        this.account_id = account_id;
+    }
     public void setDescription(String description) {
         this.description = description;
     }

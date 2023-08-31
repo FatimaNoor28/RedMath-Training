@@ -17,7 +17,7 @@ databaseChangeLog:
                   value: '{noop}admin'
               - column:
                   name: roles
-                  value: Admin
+                  value: ADMIN
 
         - insert:
             tableName: users
