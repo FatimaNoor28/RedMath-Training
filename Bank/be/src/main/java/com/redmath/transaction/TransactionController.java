@@ -25,8 +25,8 @@ public class TransactionController {
 
     @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
     @PostMapping
-    public ResponseEntity<ApiResponse<Transaction>> createTransaction(@RequestBody Transaction account) {
-        Transaction created = service.create(account);
+    public ResponseEntity<ApiResponse<Transaction>> MakeTransaction(@RequestBody Transaction transaction) {
+        Transaction created = service.MakeTransaction(transaction);
         if (created != null) {
             return ResponseEntity.ok(ApiResponse.of(created));
         }

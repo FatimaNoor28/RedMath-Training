@@ -4,21 +4,17 @@ import com.redmath.balance.BalanceService;
 import com.redmath.transaction.Transaction;
 import com.redmath.transaction.TransactionService;
 import com.redmath.users.User;
-import com.redmath.users.UserService;
 
-import org.springframework.security.core.Authentication;
 //import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
+import com.redmath.users.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

@@ -23,11 +23,11 @@ public class Transaction {
     public void setId(Long id) {
         this.transaction_id = id;
     }
-    public Long getBalance_id() {
+    public Long getAccount_id() {
         return account_id;
     }
 
-    public void setBalance_id(Long account_id) {
+    public void setAccount_id(Long account_id) {
         this.account_id = account_id;
     }
     public void setDescription(String description) {

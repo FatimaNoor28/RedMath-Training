@@ -18,10 +18,16 @@ public class BalanceService {
         return repository.findBalanceByAccountId(accountId);
     }
 
-    public Balance create(Balance balance){return repository.save(balance); }
+    public Balance createBalance(Balance balance){return repository.save(balance); }
 
     public Balance update(Balance balance){return repository.save(balance); }
     public void deleteByAccountId(Long accountId){
         repository.deleteByAccountId(accountId);
+    }
+
+    public void DeductAmount(Long id ,Long amount){
+        Balance balance = repository.getById(id);
+        balance.setAmount(balance.getAmount() - amount);
+        repository.save(balance);
     }
 }
