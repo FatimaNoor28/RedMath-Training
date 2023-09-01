@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/v1/balance")
 public class BalanceController {
@@ -19,6 +21,14 @@ public class BalanceController {
         this.service = service;
     }
 
+    @GetMapping
+    public ResponseEntity<List<Balance>> findAll() {
+        List<Balance> balances = service.findAll();
+        if (balances.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(balances);
+    }
 
     @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
     @PostMapping()

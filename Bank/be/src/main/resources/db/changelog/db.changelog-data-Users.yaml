@@ -33,4 +33,4 @@ databaseChangeLog:
                   value: '{noop}holder'
               - column:
                   name: roles
-                  value: AccountHolder
+                  value: ACCOUNT_HOLDER

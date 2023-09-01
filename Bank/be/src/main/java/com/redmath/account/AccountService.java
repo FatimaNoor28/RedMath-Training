@@ -43,17 +43,8 @@ public class AccountService implements UserDetailsService {
         this.transactionService = transactionService;
     }
 
-    public List<Object> findAll(){
-        List<Account> accounts = repository.findAll();
-        List<Balance> balance = balanceService.findAll();
-        List<Transaction> transaction = transactionService.findAll();
-
-        List<Object> list = new ArrayList<>();
-        list.add(accounts);
-        list.add(balance);
-        list.add(transaction);
-
-        return list;
+    public List<Account> findAll(){
+        return repository.findAll();
     }
 
     public Optional<AccountDetailsResponse> findById(Long id){
@@ -105,12 +96,12 @@ public class AccountService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
         User user = userService.findByUserName(name);
-        Account account = repository.findByName(name);
-        if (account == null) {
+        //Account account = repository.findByName(name);
+        if (user == null) {
             throw new UsernameNotFoundException("Invalid user: " + name);
         }
-        return new org.springframework.security.core.userdetails.User(account.getName(), account.getPassword(), true,
-                true, true,true, AuthorityUtils.commaSeparatedStringToAuthorityList(account.getRoles()));
+        return new org.springframework.security.core.userdetails.User(user.getUserName(), user.getPassword(), true,
+                true, true,true, AuthorityUtils.commaSeparatedStringToAuthorityList(user.getRoles()));
     }
 
 }

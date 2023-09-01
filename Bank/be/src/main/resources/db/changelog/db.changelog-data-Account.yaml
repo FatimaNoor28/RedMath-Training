@@ -24,9 +24,9 @@ databaseChangeLog:
               - column:
                   name: address
                   value: 'address1'
-              - column:
-                  name: roles
-                  value: ACCOUNT_HOLDER
+#              - column:
+#                  name: roles
+#                  value: ACCOUNT_HOLDER
         - insert:
             tableName: Account
             columns:
@@ -48,8 +48,8 @@ databaseChangeLog:
               - column:
                   name: address
                   value: 'address2'
-              - column:
-                  name: roles
-                  value: ADMIN
+#              - column:
+#                  name: roles
+#                  value: ADMIN
 
 

@@ -20,12 +20,6 @@ databaseChangeLog:
               - column:
                   name: roles
                   type: varchar(255)
-              - column:
-                  name: login_attempts
-                  type: int
-              - column:
-                  name: login_at
-                  type: datetime
         - addPrimaryKey:
             tableName: users
             columnNames: user_id

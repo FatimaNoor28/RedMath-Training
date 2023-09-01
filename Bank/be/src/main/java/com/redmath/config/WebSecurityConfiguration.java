@@ -12,31 +12,45 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.csrf.CsrfTokenRequestAttributeHandler;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.cors.CorsConfiguration;
+
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+
+import java.util.Arrays;
 
 @Configuration
 @EnableMethodSecurity
 public class WebSecurityConfiguration {
 
-    @Value("${spring.web.security.ignored:/error,/ui/**,/favicon.ico}")
-    private String[] ignored = { "/error", "/ui/**", "/favicon.ico" };
+    @Value("${spring.web.security.ignored:/error,/ui/**,/favicon.ico,/api/v1/account}")
+    private String[] ignored = { "/error", "/ui/**", "/favicon.ico", "/api/v1/account" };
     @Bean
-    @Order(1)
     public WebSecurityCustomizer webSecurityCustomizer() {
         return web -> {
             for(String ignore:ignored )
                 web.ignoring().requestMatchers(AntPathRequestMatcher.antMatcher(ignore));
         };
     }
-    @Bean
-    @Order(2)
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-//        http.csrf(config -> config.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
-//                .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler()));
-//        http.authorizeHttpRequests(config -> config
-//                .requestMatchers(AntPathRequestMatcher.antMatcher("/actuator/**")).hasAnyAuthority("ADMIN")
-//                .anyRequest().authenticated());
+    @Bean
+    public CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.setAllowedOrigins(Arrays.asList(""));
+        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        configuration.setAllowedHeaders(Arrays.asList(""));
+        configuration.setAllowCredentials(true);
+        configuration.setMaxAge(3600L);
+
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration);
+
+        return source;
+    }
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
         http.csrf().disable();
         http.formLogin(Customizer.withDefaults());
