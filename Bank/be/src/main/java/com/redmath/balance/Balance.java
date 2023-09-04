@@ -1,19 +1,18 @@
 package com.redmath.balance;
+import java.time.LocalDate;
 import java.util.Date;
 import com.redmath.account.Account;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
 @Entity(name = "Balance")
 public class Balance {
     @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long balance_id;
     private Long account_id;
     private Long amount;
     private String DB_CR;
-    private Date date;
+    private LocalDate date;
 
     public Long getId() {
         return balance_id;
@@ -40,11 +39,11 @@ public class Balance {
 
     public String getDB_CR() { return DB_CR;}
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date Date) {
+    public void setDate(LocalDate Date) {
         this.date = Date;
     }
 }

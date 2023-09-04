@@ -5,12 +5,10 @@ import com.redmath.basic.ApiResponse;
 import com.redmath.transaction.Transaction;
 
 import com.redmath.users.User;
-import org.springframework.security.core.Authentication;
+//import org.springframework.security.core.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -19,13 +17,13 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-import org.springframework.security.core.userdetails.UserDetails;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 
+
+
+//("http://localhost:8081/")
 @RestController
-@RequestMapping("/api/v1")
-@CrossOrigin("http://localhost:8081/")
+@RequestMapping("/api/v1/account")
+@CrossOrigin
 public class AccountController {
     @Autowired
     private final AccountService service;
@@ -33,29 +31,16 @@ public class AccountController {
     public AccountController(AccountService service){ this.service = service; }
 
     @PostMapping("/login")
-    public ResponseEntity<Boolean> login(String username, String password) {
-        // Authenticate user based on username and password
-        UserDetails userDetails;
-        try {
-            userDetails = service.loadUserByUsername(username);
-        } catch (UsernameNotFoundException ex) {
-            return ResponseEntity.ok(false);
-        }
-
-        // Perform password validation here (you should implement this logic)
-        if (!passwordsMatch(password, userDetails.getPassword())) {
-            return ResponseEntity.ok(false);
-        }
-
-        // Authentication succeeded
-        return ResponseEntity.ok(true);
+    public ResponseEntity<?> LoginUser(@RequestBody User user){
+        LoginMessage loginMessage = service.loginUser(user);
+        return ResponseEntity.ok(loginMessage);
     }
 
     private boolean passwordsMatch(String providedPassword, String actualPassword) {
         return providedPassword.equals(actualPassword);
     }
 
-    @GetMapping("/account")
+    @GetMapping
     public ResponseEntity<List<Account>> findAll() {
         List<Account> accounts = service.findAll();
         if (accounts.isEmpty()) {
@@ -64,16 +49,17 @@ public class AccountController {
         return ResponseEntity.ok(accounts);
     }
     @GetMapping("/{id}")
-    @PreAuthorize("hasAuthority('ADMIN')")
+    // @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<ApiResponse<AccountDetailsResponse>> findById(@PathVariable("id") Long id){
 
         Optional<AccountDetailsResponse> accountDetailsResponse = service.findById(id);
         return ResponseEntity.ok(ApiResponse.of(accountDetailsResponse.get()));
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')")
+    // @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping
     public ResponseEntity<ApiResponse<Account>> create(@RequestBody Account account) {
+
         Account created = service.create(account);
         if (created != null) {
             return ResponseEntity.ok(ApiResponse.of(created));
@@ -82,13 +68,13 @@ public class AccountController {
     }
 
 
-    @PreAuthorize("hasAuthority('ADMIN')")
+    // @PreAuthorize("hasAuthority('ADMIN')")
     @PutMapping("/{id}")
     public void update(@RequestBody Account account){
         service.update(account);
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')")
+    // @PreAuthorize("hasAuthority('ADMIN')")
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         service.delete(id);

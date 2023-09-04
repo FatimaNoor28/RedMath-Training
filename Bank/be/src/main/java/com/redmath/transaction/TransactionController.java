@@ -6,13 +6,14 @@ import com.redmath.basic.ApiResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
+//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/transaction")
+@CrossOrigin
 public class TransactionController {
     @Autowired
     private final TransactionService service;
@@ -29,7 +30,7 @@ public class TransactionController {
         }
         return ResponseEntity.ok(transactions);
     }
-    @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
+    // @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
     @PostMapping
     public ResponseEntity<ApiResponse<Transaction>> MakeTransaction(@RequestBody Transaction transaction) {
         Transaction created = service.MakeTransaction(transaction);

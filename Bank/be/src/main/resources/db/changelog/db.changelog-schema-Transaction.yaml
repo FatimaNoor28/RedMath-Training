@@ -8,8 +8,8 @@ databaseChangeLog:
             columns:
               - column:
                   name: transaction_id
-                  autoIncrement: true
                   type: bigint
+                  autoIncrement: true
                   constraints:
                     primaryKey: true
                     nullable: false

@@ -14,7 +14,7 @@ databaseChangeLog:
 #                  value: '1'
               - column:
                   name: password
-                  value: '{noop}password1'
+                  value: 'password1'
               - column:
                   name: name
                   value: 'account1'
@@ -38,7 +38,7 @@ databaseChangeLog:
 #                  value: '2'
               - column:
                   name: password
-                  value: '{noop}password2'
+                  value: 'password2'
               - column:
                   name: name
                   value: 'account2'

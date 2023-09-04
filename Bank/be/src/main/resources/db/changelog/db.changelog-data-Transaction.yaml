@@ -24,24 +24,3 @@ databaseChangeLog:
               - column:
                   name: transaction_date
                   value: '2000-01-01'
-        - insert:
-            tableName: Transaction
-            columns:
-              - column:
-                  name: transaction_id
-                  value: '2'
-              - column:
-                  name: account_id
-                  value: '2'
-              - column:
-                  name: description
-                  value: 'Description2'
-              - column:
-                  name: amount
-                  value: '20000'
-              - column:
-                  name: DB_CR
-                  value: 'no'
-              - column:
-                  name: transaction_date
-                  value: '2023-01-01'

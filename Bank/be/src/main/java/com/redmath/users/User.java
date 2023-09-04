@@ -9,18 +9,9 @@ import jakarta.persistence.Id;
 public class User {
 
     @Id
-    private Long userId;
     private String userName;
     private String password;
     private String roles;
-
-    public Long getId() {
-        return userId;
-    }
-
-    public void setId(Long id) {
-        this.userId = id;
-    }
 
     public String getUserName() {
         return userName;

@@ -6,9 +6,9 @@ databaseChangeLog:
         - insert:
             tableName: users
             columns:
-              - column:
-                  name: user_id
-                  value: '1'
+#              - column:
+#                  name: user_id
+#                  value: '1'
               - column:
                   name: user_name
                   value: Admin
@@ -22,15 +22,30 @@ databaseChangeLog:
         - insert:
             tableName: users
             columns:
-              - column:
-                  name: user_id
-                  value: '2'
+#              - column:
+#                  name: user_id
+#                  value: '2'
               - column:
                   name: user_name
                   value: 'Account Holder'
               - column:
                   name: password
-                  value: '{noop}holder'
+                  value: 'holder'
+              - column:
+                  name: roles
+                  value: ACCOUNT_HOLDER
+        - insert:
+            tableName: users
+            columns:
+#              - column:
+#                  name: user_id
+#                  value: '3'
+              - column:
+                  name: user_name
+                  value: 'account1'
+              - column:
+                  name: password
+                  value: 'password1'
               - column:
                   name: roles
                   value: ACCOUNT_HOLDER

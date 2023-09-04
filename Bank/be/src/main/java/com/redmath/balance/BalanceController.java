@@ -6,13 +6,14 @@ import com.redmath.basic.ApiResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
+//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/balance")
+@CrossOrigin
 public class BalanceController {
     @Autowired
     private final BalanceService service;
@@ -30,7 +31,7 @@ public class BalanceController {
         return ResponseEntity.ok(balances);
     }
 
-    @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
+    // @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
     @PostMapping()
     public ResponseEntity<ApiResponse<Balance>> createBalance(@RequestBody Balance balance) {
         Balance created = service.createBalance(balance);
@@ -40,7 +41,7 @@ public class BalanceController {
         return ResponseEntity.status(HttpStatus.CONFLICT).build();
     }
 
-    @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
+    // @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
     @PutMapping("/{id}")
     public void update(@RequestBody Balance balance){
         service.update(balance);

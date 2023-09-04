@@ -1,20 +1,21 @@
 package com.redmath.transaction;
+import java.time.LocalDate;
 import java.util.Date;
 import com.redmath.balance.Balance;
 import jakarta.persistence.*;
+import org.springframework.cglib.core.Local;
 
 @Entity(name = "Transaction")
 public class Transaction {
     @Id
-    @GeneratedValue
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long transaction_id;
     private Long account_id;
     private String description;
     private Long amount;
     private String DB_CR;
-    @Temporal(TemporalType.DATE)
     @Column(name = "transaction_date")
-    private Date transactionDate;
+    private LocalDate transactionDate;
 
     public Long getId() {
         return transaction_id;
@@ -48,11 +49,11 @@ public class Transaction {
 
     public String getDB_CR() { return DB_CR;}
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return transactionDate;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.transactionDate = date;
     }
 }

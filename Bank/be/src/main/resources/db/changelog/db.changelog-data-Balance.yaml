@@ -22,21 +22,21 @@ databaseChangeLog:
                   name: date
                   value: '2000-01-01'
 
-        - insert:
-            tableName: Balance
-            columns:
-              - column:
-                  name: balance_id
-                  value: '2'
-              - column:
-                  name: account_id
-                  value: '2'
-              - column:
-                  name: amount
-                  value: '20000'
-              - column:
-                  name: DB_CR
-                  value: 'no'
-              - column:
-                  name: date
-                  value: '2023-01-01'
+#        - insert:
+#            tableName: Balance
+#            columns:
+#              - column:
+#                  name: balance_id
+#                  value: '2'
+#              - column:
+#                  name: account_id
+#                  value: '2'
+#              - column:
+#                  name: amount
+#                  value: '20000'
+#              - column:
+#                  name: DB_CR
+#                  value: 'no'
+#              - column:
+#                  name: date
+#                  value: '2023-01-01'

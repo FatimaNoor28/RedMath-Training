@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,6 +32,7 @@ public class TransactionService {
         }
         if(balance.get().getAmount() >= transaction.getAmount() ) {
             balanceService.DeductAmount(transaction.getId() ,transaction.getAmount());
+            transaction.setDate(LocalDate.now());
             return repository.save(transaction);
         }
 

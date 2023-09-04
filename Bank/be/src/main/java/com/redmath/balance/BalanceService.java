@@ -3,6 +3,7 @@ package com.redmath.balance;
 import com.redmath.account.AccountRepository;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,7 +19,9 @@ public class BalanceService {
         return repository.findBalanceByAccountId(accountId);
     }
 
-    public Balance createBalance(Balance balance){return repository.save(balance); }
+    public Balance createBalance(Balance balance){
+            balance.setDate(LocalDate.now());
+            return repository.save(balance); }
 
     public Balance update(Balance balance){return repository.save(balance); }
     public void deleteByAccountId(Long accountId){
@@ -26,8 +29,8 @@ public class BalanceService {
     }
 
     public void DeductAmount(Long id ,Long amount){
-        Balance balance = repository.getById(id);
-        balance.setAmount(balance.getAmount() - amount);
-        repository.save(balance);
+        Optional<Balance> balance = repository.findById(id);
+        balance.get().setAmount(balance.get().getAmount() - amount);
+        repository.save(balance.get());
     }
 }

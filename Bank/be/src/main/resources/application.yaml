@@ -20,9 +20,9 @@ spring:
 #      password: test
   h2:
     console:
-      enabled: ${Account.h2.console:false}
+      enabled: true
   liquibase:
-    contexts: ${Account.liquibase.contexts:}
+    contexts: ${Accounts.liquibase.contexts:}
 management:
   endpoints:
     web:
