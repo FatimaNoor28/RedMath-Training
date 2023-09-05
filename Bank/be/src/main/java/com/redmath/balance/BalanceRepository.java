@@ -14,4 +14,5 @@ public interface BalanceRepository extends JpaRepository<Balance ,Long>{
 
     @Query(value = "DELETE FROM Balance WHERE account_id = ?", nativeQuery = true)
     void deleteByAccountId(Long accountId);
+
 }

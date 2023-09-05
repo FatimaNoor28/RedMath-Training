@@ -19,9 +19,25 @@ public class BalanceService {
         return repository.findBalanceByAccountId(accountId);
     }
 
-    public Balance createBalance(Balance balance){
+    public Balance AddBalance(Balance balance){
+        Optional<Balance> oldBalance = repository.findBalanceByAccountId(balance.getAccount_id());
+        if(oldBalance.isEmpty())
+        {
+            System.out.println("service if part called");
             balance.setDate(LocalDate.now());
-            return repository.save(balance); }
+            return repository.save(balance);
+        }
+        else{
+            System.out.println("service else part called");
+            Balance bal = oldBalance.get();
+            Long amount = balance.getAmount()+ bal.getAmount();
+            bal.setAmount(amount);
+            bal.setDB_CR(balance.getDB_CR());
+            balance.setDate(LocalDate.now());
+            return repository.save(balance);
+        }
+
+    }
 
     public Balance update(Balance balance){return repository.save(balance); }
     public void deleteByAccountId(Long accountId){

@@ -32,9 +32,12 @@ public class BalanceController {
     }
 
     // @PreAuthorize("hasAuthority('ACCOUNT_HOLDER')")
-    @PostMapping()
-    public ResponseEntity<ApiResponse<Balance>> createBalance(@RequestBody Balance balance) {
-        Balance created = service.createBalance(balance);
+    @PostMapping
+    public ResponseEntity<ApiResponse<Balance>>AddBalance(@RequestBody Balance balance) {
+        System.out.println(balance.getId());
+        System.out.println(balance.getAmount());
+
+        Balance created = service.AddBalance(balance);
         if (created != null) {
             return ResponseEntity.ok(ApiResponse.of(created));
         }

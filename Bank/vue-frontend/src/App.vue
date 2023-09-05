@@ -11,12 +11,6 @@
 
 export default {
   name: 'App',
-  // components: {
-  //   // Login,
-  //   Accounts,
-  //   Balance,
-  //   Transactions
-  // }
 }
 </script>
 

@@ -7,8 +7,8 @@ class BalanceService{
     getBalance(){
         return axios.get(BALANCE_API_BASE_URL);
     }
-    addBalance(){
-        return axios.post(BALANCE_API_BASE_URL);
+    createBalance(balance){
+        return axios.post(BALANCE_API_BASE_URL, balance);
     }
 
 }
