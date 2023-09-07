@@ -14,7 +14,7 @@ databaseChangeLog:
 #                  value: '1'
               - column:
                   name: password
-                  value: 'password1'
+                  value: 'password'
               - column:
                   name: name
                   value: 'account1'

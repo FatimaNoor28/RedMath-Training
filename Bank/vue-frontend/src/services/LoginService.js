@@ -1,49 +1,26 @@
 import axios from 'axios';
 
-const LOGIN_API_BASE_URL = 'http://localhost:8080/api/v1/account/login';
-
+const LOGIN_API_BASE_URL = '/login';
+const ROLE_API_URL = '/api/v1/users/role';
 class LoginService{
 
     async getLogin(user){
-        return axios.post(LOGIN_API_BASE_URL, user);
-        // return data;   
+        var fdata = new FormData();
+        fdata.append('username', user.userName);
+        fdata.append('password', user.password);
+        return axios({
+            method: "post",
+            url: LOGIN_API_BASE_URL,
+            data: fdata,
+            headers: { "Content-Type": "multipart/form-data" },
+          });
+    }
+
+    async getRoles(userName){
+        
+        return axios.get(`${ROLE_API_URL}/${userName}`);
     }
 }
 
 export default new LoginService();
 
-
-// mounted() {
-//     console.log("mounted() called.......");
-// },
-// methods: {
-//      LoginData()
-//      {
-//       axios.post("http://localhost:8080/api/v1/login", this.user)
-//       .then(
-//         ({data})=>{
-//          console.log(data);
-//          try {
-//          if (data.message === "User Name not exits") 
-//              {
-//               alert("User name not exits");
-              
-//                }
-//                 else if(data.message == "Login Success")
-//                {
-              
-//                 this.$App.push({ name: 'Accounts' })
-//                }
-//                 else 
-//                { 
-//                    alert("Incorrect User Name and Password not match");
-//                }
-
-//                } catch (err) {
-//                    console.error("An error occurred:", err);
-//                    alert("Error: Unable to complete the request. Please try again later.");
-//                }    
-//         }
-//       )
-//      }
-//}

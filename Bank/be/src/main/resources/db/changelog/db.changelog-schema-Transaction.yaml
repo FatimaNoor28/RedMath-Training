@@ -23,7 +23,7 @@ databaseChangeLog:
                   name: amount
                   type: bigint
               - column:
-                  name: DB_CR
+                  name: db_cr
                   type: varchar(250)
               - column:
                   name: transaction_date

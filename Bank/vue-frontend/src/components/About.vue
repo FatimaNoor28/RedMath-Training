@@ -25,76 +25,49 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-
-        <h1 class="text-center"> Accounts List</h1>
-
-        <table class="table table-striped table-dark">
-            <thead>
-                <tr>
-                    <th> Account Id</th>
-                    <th> Name</th>
-                    <th> Password</th>
-                    <th> Email</th>
-                    <th> Address</th>
-                </tr>
-
-            </thead>
-            <tbody>
-                <tr v-for="Account in Accounts" v-bind:key="Account.id">
-                    <td> {{ Account.id }}</td>
-                    <td> {{ Account.name }}</td>
-                    <td> {{ Account.password }}</td>
-                    <td> {{ Account.email }}</td>
-                    <td> {{ Account.address }}</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="container mt-5">
+      <h1 class="mb-4">About Our Bank</h1>
+      <p class="mb-4">
+        Welcome to Bank XYZ, where we are dedicated to providing exceptional financial services to our customers.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Nullam vehicula libero eu est interdum congue. 
+        Nulla nec arcu nec odio interdum iaculis id id turpis.
+      </p>
+  
+      <!-- Bank History Section -->
+      <div class="mb-5">
+        <h2>Our History</h2>
+        <p>
+          Our bank has a rich history dating back to [year], when it was founded by [founder's name]. 
+          Since then, we have been serving the community with integrity and commitment.
+        </p>
+      </div>
+  
+      <!-- Mission and Values Section -->
+      <div>
+        <h2>Our Mission and Values</h2>
+        <p>
+          At Bank XYZ, our mission is to [describe your mission statement]. 
+          We are guided by the following core values: [list your core values].
+        </p>
+      </div>
     </div>
-</template>
-
-<script>
-import AccountService from '../services/AccountService';
-
-export default {
-    name: 'AccountsList',
-    data() {
-        return {
-            Accounts: {},
-            Account: {
-                id: '',
-                name: '',
-                password: '',
-                email: '',
-                address: ''
-            }
-        }
-    },
-    created() {
-        this.getAccounts();
-        // this.editAccounts();
-    },
-    mounted() {
-        console.log("mounted() called.......");
-
-    },
-    methods: {
-        getAccounts() {
-            AccountService.getAccounts().then((response) => {
-                console.log("response obtained: ", response);
-                this.Accounts = response.data;
-            });
-        },
-        
-    }
-}
-</script>
-
-<style scoped>
- .container {
+  </template>
+  
+  <script>
+  export default {
+    name: 'AboutPage',
+  };
+  </script>
+  
+  <style scoped>
+  /* Add styles for your About page here */
+  /* Example: */
+  .container {
     padding: 20px;
-    padding-top: 70px;
   }
+
+  
 .navbar-light .navbar-brand {
   color: #fff;
   font-size: 25px;
@@ -143,4 +116,7 @@ export default {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #7da4ad;
 }
-</style>
+  
+  /* You can add more custom styles as needed */
+  </style>
+  

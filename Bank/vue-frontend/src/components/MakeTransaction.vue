@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h1 class="text-center">Make Transaction</h1>
-        <form @submit.prevent="makeTransaction">
+        <form @submit.prevent="MakeTransaction">
             <!-- Form fields here -->
             <div class="form-group">
                 <label for="id">Transaction ID</label>
@@ -37,23 +37,24 @@ export default {
     data() {
         return {
             transaction: {
-                id: '',
+                id: '9999',
                 account_id: '',
                 description: '',
                 amount: '',
                 db_CR: '',
-                date: ''
+                date: '2000-01-01'
             }
         };
     },
-    created() {
-        this.makeTransaction();
-        // this.editAccounts();
-    },
+    // created() {
+    //     this.MakeTransaction();
+    //     // this.editAccounts();
+    // },
     methods: {
-        makeTransaction() {
+        MakeTransaction() {
             // Call your backend service to make the transaction
             TransactionService.makeTransaction(this.transaction)
+            
                 .then((response) => {
                     // Handle the response, e.g., show a success message
                     console.log('Transaction successful:', response.data);
@@ -124,7 +125,7 @@ label {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: darkseagreen;
 }
 
 </style>

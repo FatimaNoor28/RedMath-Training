@@ -7,11 +7,14 @@ import jakarta.persistence.*;
 @Entity(name = "Balance")
 public class Balance {
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "balance_id")
     private Long balance_id;
+    @Column(name = "account_id")
     private Long account_id;
     private Long amount;
-    private String DB_CR;
+
+    private String db_CR;
     private LocalDate date;
 
     public Long getId() {
@@ -33,11 +36,11 @@ public class Balance {
     }
     public void setAmount(Long amount) { this.amount = amount;    }
 
-    public void setDB_CR(String DB_CR) {
-        this.DB_CR = DB_CR;
+    public void setDB_CR(String db_cr) {
+        this.db_CR = db_cr;
     }
 
-    public String getDB_CR() { return DB_CR;}
+    public String getDB_CR() { return db_CR;}
 
     public LocalDate getDate() {
         return date;

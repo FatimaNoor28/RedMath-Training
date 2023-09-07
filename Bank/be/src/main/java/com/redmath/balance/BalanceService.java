@@ -1,6 +1,7 @@
 package com.redmath.balance;
 
 import com.redmath.account.AccountRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -15,7 +16,7 @@ public class BalanceService {
 
     public List<Balance> findAll(){return repository.findAll();}
     public Optional<Balance> findBalanceByAccountId(Long accountId){
-        Optional<List<Balance>> balances = Optional.empty();
+//        Optional<List<Balance>> balances = Optional.empty();
         return repository.findBalanceByAccountId(accountId);
     }
 
@@ -25,28 +26,40 @@ public class BalanceService {
         {
             System.out.println("service if part called");
             balance.setDate(LocalDate.now());
-            return repository.save(balance);
         }
         else{
             System.out.println("service else part called");
             Balance bal = oldBalance.get();
             Long amount = balance.getAmount()+ bal.getAmount();
-            bal.setAmount(amount);
-            bal.setDB_CR(balance.getDB_CR());
+            System.out.println("New Balance: "+amount);
+            balance.setAmount(amount);
+            balance.setDB_CR(balance.getDB_CR());
             balance.setDate(LocalDate.now());
+        }
+        return repository.save(balance);
+    }
+
+    public Balance add_subtract_balance(Balance balance, String db_cr, Long amount){
+
+        if(db_cr.equals("db"))
+            return DeductAmount(balance.getId(), amount);
+        else if (db_cr.equals("cr")) {
+            balance.setDB_CR(db_cr);
+            balance.setAmount(balance.getAmount()+amount);
             return repository.save(balance);
         }
-
+        return null;
     }
-
-    public Balance update(Balance balance){return repository.save(balance); }
+    public void delete(Long id){repository.deleteById(id); }
+    @Transactional
     public void deleteByAccountId(Long accountId){
-        repository.deleteByAccountId(accountId);
+        if(!repository.findBalanceByAccountId(accountId).isEmpty())
+            repository.deleteByAccountId(accountId);
     }
 
-    public void DeductAmount(Long id ,Long amount){
+    public Balance DeductAmount(Long id ,Long amount){
         Optional<Balance> balance = repository.findById(id);
         balance.get().setAmount(balance.get().getAmount() - amount);
-        repository.save(balance.get());
+        return repository.save(balance.get());
     }
 }

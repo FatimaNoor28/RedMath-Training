@@ -33,7 +33,7 @@
 import TransactionService from '../services/TransactionService';
 
 export default {
-    name: 'AccountsList',
+    name: 'TransactionsList',
     data() {
         return {
             Transactions: {},

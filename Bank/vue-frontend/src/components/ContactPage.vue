@@ -25,76 +25,52 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-
-        <h1 class="text-center"> Accounts List</h1>
-
-        <table class="table table-striped table-dark">
-            <thead>
-                <tr>
-                    <th> Account Id</th>
-                    <th> Name</th>
-                    <th> Password</th>
-                    <th> Email</th>
-                    <th> Address</th>
-                </tr>
-
-            </thead>
-            <tbody>
-                <tr v-for="Account in Accounts" v-bind:key="Account.id">
-                    <td> {{ Account.id }}</td>
-                    <td> {{ Account.name }}</td>
-                    <td> {{ Account.password }}</td>
-                    <td> {{ Account.email }}</td>
-                    <td> {{ Account.address }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</template>
-
-<script>
-import AccountService from '../services/AccountService';
-
-export default {
-    name: 'AccountsList',
-    data() {
-        return {
-            Accounts: {},
-            Account: {
-                id: '',
-                name: '',
-                password: '',
-                email: '',
-                address: ''
-            }
-        }
-    },
-    created() {
-        this.getAccounts();
-        // this.editAccounts();
-    },
-    mounted() {
-        console.log("mounted() called.......");
-
-    },
-    methods: {
-        getAccounts() {
-            AccountService.getAccounts().then((response) => {
-                console.log("response obtained: ", response);
-                this.Accounts = response.data;
-            });
-        },
+    <div class="container mt-5">
+      <h1 class="mb-4">Contact Us</h1>
+      <p class="mb-4">Feel free to contact us for any inquiries or feedback.</p>
+  
+      <!-- Contact Form -->
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
         
-    }
-}
-</script>
-
-<style scoped>
- .container {
+        <!-- Contact Image -->
+        <div class="col-md-6">
+          <img src="/path/to/your/image.jpg" alt="Contact Image" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: 'ContactPage',
+  };
+  </script>
+  
+  <style scoped>
+  /* Add styles for your contact page here */
+  /* Example: */
+  .container {
     padding: 20px;
-    padding-top: 70px;
   }
+
+  
 .navbar-light .navbar-brand {
   color: #fff;
   font-size: 25px;
@@ -143,4 +119,8 @@ export default {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #7da4ad;
 }
-</style>
+  
+  
+  /* You can add more custom styles as needed */
+  </style>
+  

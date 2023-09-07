@@ -19,7 +19,7 @@
                     <td> {{ Balance.id }}</td>
                     <td> {{ Balance.account_id }}</td>
                     <td> {{ Balance.amount }}</td>
-                    <td> {{ Balance.db_cr }}</td>
+                    <td> {{ Balance.db_CR }}</td>
                     <td> {{ Balance.date }}</td>
                 </tr>
             </tbody>
@@ -38,9 +38,8 @@ export default {
             Balance: {
                 id: '',
                 account_id: '',
-                description: '',
                 amount: '',
-                db_cr: '',
+                db_CR: '',
                 date: ''
             }
         }

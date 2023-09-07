@@ -19,7 +19,7 @@ databaseChangeLog:
                   name: amount
                   value: '10000'
               - column:
-                  name: DB_CR
+                  name: db_cr
                   value: 'yes'
               - column:
                   name: transaction_date

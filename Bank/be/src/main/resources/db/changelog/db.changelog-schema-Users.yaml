@@ -13,7 +13,7 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: password
-                  type: varchar(50)
+                  type: varchar(250)
               - column:
                   name: roles
                   type: varchar(255)

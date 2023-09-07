@@ -14,7 +14,7 @@ databaseChangeLog:
                   value: Admin
               - column:
                   name: password
-                  value: '{noop}admin'
+                  value: '$2a$10$nkCK1D2wn58.tAe72lctc.nFVvolE5u1ekhJtUUgXyUDnhVCEWlBS'
               - column:
                   name: roles
                   value: ADMIN
@@ -27,10 +27,10 @@ databaseChangeLog:
 #                  value: '2'
               - column:
                   name: user_name
-                  value: 'Account Holder'
+                  value: 'account2'
               - column:
                   name: password
-                  value: 'holder'
+                  value: '$2a$10$VsO/M6RIPnSZz8QHFVRnk.i5KrURTU8qKrPLchsQ515UVESVe7n/.'
               - column:
                   name: roles
                   value: ACCOUNT_HOLDER
@@ -45,7 +45,7 @@ databaseChangeLog:
                   value: 'account1'
               - column:
                   name: password
-                  value: 'password1'
+                  value: '$2a$10$80EogsEKPl.3cd2hTD8VwefSRqMU94uzY7Fzfw8Vnflcih43/OpWa'
               - column:
                   name: roles
                   value: ACCOUNT_HOLDER

@@ -34,17 +34,17 @@ export default {
         return {
             balance: {
                 account_id: '',
-                id: '',
+                id: '9999',
                 amount: '',
                 db_CR: '',
                 date: ''
             }
         };
     },
-    created() {
-        this.addBalance();
-        // this.editAccounts();
-    },
+    // created() {
+    //     this.addBalance();
+    //     // this.editAccounts();
+    // },
     methods: {
         addBalance() {
             console.log("balance: ", this.balance)
@@ -56,7 +56,6 @@ export default {
                     // Clear the form
                     this.balance = {
                         account_id: '',
-                        description: '',
                         amount: '',
                         db_CR: '',
                         date: ''

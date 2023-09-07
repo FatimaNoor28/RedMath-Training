@@ -28,8 +28,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 @Service
-public class AccountService  { //implements UserDetailsService
-
+public class AccountService //implements UserDetailsService
+{
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     private final AccountRepository repository;
@@ -48,60 +48,41 @@ public class AccountService  { //implements UserDetailsService
     }
 
 
-    public LoginMessage loginUser(User user){
-        String message="";
-        User user1 = userService.findByUserName(user.getUserName());
-        if(user1!=null) {
-            String password = user.getPassword();
-            String encodedPassword = user1.getPassword();
-//            Boolean isPwdRight = passwordEncoder.matches(password, encodedPassword);
-            Boolean isPwdRight = password.equals(encodedPassword);
-            if (isPwdRight && user1.getRoles().equals("ACCOUNT_HOLDER")) {
-                Optional<Account> account = repository.findAccountByNameAndPassword(user.getUserName(), encodedPassword);
-                if (account.isPresent()) {
-                    return new LoginMessage("Login Success", true);
-                } else {
-                    return new LoginMessage("Login Failed", false);
-                }
-            } else if (isPwdRight && user1.getRoles().equals("ADMIN")) {
-                return new LoginMessage("Login Success", true);
-            } else {
-                return new LoginMessage("password Not Match", false);
-            }
-        }else {
-            return new LoginMessage("User Name not exits", false);
-        }
-    }
-
     public List<Account> findAll(){
         return repository.findAll();
     }
 
-    public Optional<AccountDetailsResponse> findById(Long id){
 
-        Optional<Account> account= repository.findById(id);
-        if (account.isEmpty()) {
-            return Optional.empty();
-        }
-            Optional<Balance> balance = balanceService.findBalanceByAccountId(account.get().getId());
-            Optional<Transaction> transaction = transactionService.findTransactionByAccountId(account.get().getId());
-
-        AccountDetailsResponse response = new AccountDetailsResponse();
-
-        response.setAccount(account.get());
-        response.setBalance(balance);
-        response.setTransaction(transaction);
-        logger.warn("Not Authorized!!");
-        return Optional.of(response);
+    public Optional<Account> findAccountByNameAndPassword(String username, String password){
+        return repository.findAccountByNameAndPassword(username, password);
     }
+//    public Optional<AccountDetailsResponse> findById(Long id){
+//
+//        Optional<Account> account= repository.findById(id);
+//        if (account.isEmpty()) {
+//            return Optional.empty();
+//        }
+//            Optional<Balance> balance = balanceService.findBalanceByAccountId(account.get().getId());
+//            Optional<List<Transaction>> transactions = transactionService.findTransactionByAccountId(account.get().getId());
+//
+//        AccountDetailsResponse response = new AccountDetailsResponse();
+//
+//        response.setAccount(account.get());
+//        response.setBalance(balance);
+//        response.setTransaction(transactions);
+//        logger.warn("Not Authorized!!");
+//        return Optional.of(response);
+//    }
+
 
     public Account create(Account account){
         if (account.getId() != null && repository.existsById(account.getId())) {
             logger.warn("News with id {} already exists", account.getId());
             return null;
         }
-        passwordEncoder.encode(account.getPassword());
-        userService.create(account.getName(), account.getPassword());
+        String encodedPassword = passwordEncoder.encode(account.getPassword());
+        userService.create(account.getName(), encodedPassword);
+        account.setPassword(encodedPassword);
         return repository.save(account);
     }
 
@@ -116,24 +97,13 @@ public class AccountService  { //implements UserDetailsService
     public Optional<Void> delete(Long id){
         if (repository.existsById(id)) {
             Optional<Account> accountToBeDeleted = repository.findById(id);
-            balanceService.deleteByAccountId(id);
+            repository.deleteById(id);
+
             transactionService.deleteByAccountId(id);
-            repository.delete(accountToBeDeleted.get());
+            balanceService.deleteByAccountId(id);
 
             return Optional.empty();
         }
         return null;
     }
-
-    // @Override
-    // public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
-    //     User user = userService.findByUserName(name);
-    //     //Account account = repository.findByName(name);
-    //     if (user == null) {
-    //         throw new UsernameNotFoundException("Invalid user: " + name);
-    //     }
-    //     return new org.springframework.security.core.userdetails.User(user.getUserName(), user.getPassword(), true,
-    //             true, true,true, AuthorityUtils.commaSeparatedStringToAuthorityList(user.getRoles()));
-    // }
-
 }

@@ -13,6 +13,7 @@ public class Transaction {
     private Long account_id;
     private String description;
     private Long amount;
+    @Column(name = "db_cr")
     private String DB_CR;
     @Column(name = "transaction_date")
     private LocalDate transactionDate;

@@ -1,13 +1,18 @@
 import axios from 'axios';
 
-const BALANCE_API_BASE_URL = 'http://localhost:8080/api/v1/balance';
+const BALANCE_API_BASE_URL = '/api/v1/balance';
 
-class BalanceService{
+class BalanceService {
 
-    getBalance(){
+    getBalance() {
         return axios.get(BALANCE_API_BASE_URL);
     }
-    createBalance(balance){
+    getBalanceByAccountId(accountId) {
+        return axios.get(`${BALANCE_API_BASE_URL}/${accountId}`);
+    }
+    createBalance(balance) {
+        console.log('Balance object before sending:', balance);
+
         return axios.post(BALANCE_API_BASE_URL, balance);
     }
 

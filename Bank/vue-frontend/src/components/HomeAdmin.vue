@@ -1,4 +1,22 @@
+<!-- <template>
+    <div>
+      <h1>Logged In Successfully</h1>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: 'HomePage',
+    data () {
+        return {
+            msg: 'Welcome to your Vue.js App'
+        }
+    }
+  }
+  </script> -->
+  
 <template>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid" style="   background-color: #7da4ad;">
         <a class="navbar-brand" href="#">Mouri</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -25,76 +43,84 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-
-        <h1 class="text-center"> Accounts List</h1>
-
-        <table class="table table-striped table-dark">
-            <thead>
-                <tr>
-                    <th> Account Id</th>
-                    <th> Name</th>
-                    <th> Password</th>
-                    <th> Email</th>
-                    <th> Address</th>
-                </tr>
-
-            </thead>
-            <tbody>
-                <tr v-for="Account in Accounts" v-bind:key="Account.id">
-                    <td> {{ Account.id }}</td>
-                    <td> {{ Account.name }}</td>
-                    <td> {{ Account.password }}</td>
-                    <td> {{ Account.email }}</td>
-                    <td> {{ Account.address }}</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="content">
+      <h2>Account Actions</h2>
+      <div class="action-buttons">
+        <button @click="viewAccounts">View Accounts</button>
+        <button @click="addAccount">Add Account</button>
+        <button @click="updateAccount">Update Account</button>
+        <button @click="deleteAccount">Delete Account</button>
+      </div>
     </div>
+  </body>
 </template>
-
+  
 <script>
-import AccountService from '../services/AccountService';
-
 export default {
-    name: 'AccountsList',
-    data() {
-        return {
-            Accounts: {},
-            Account: {
-                id: '',
-                name: '',
-                password: '',
-                email: '',
-                address: ''
-            }
-        }
+  name: 'HomePage',
+  methods: {
+    viewAccounts() {
+      // Implement the logic for viewing accounts
+      console.log("View Accounts clicked");
+      this.$router.push({ name: 'viewAccounts' });
     },
-    created() {
-        this.getAccounts();
-        // this.editAccounts();
+    addAccount() {
+      // Implement the logic for adding an account
+      console.log("Add Account clicked");
+      this.$router.push({ name: 'AddAccount' });
     },
-    mounted() {
-        console.log("mounted() called.......");
-
+    updateAccount() {
+      // Implement the logic for updating an account
+      console.log("Update Account clicked");
+      this.$router.push({ name: "updateAccount" });
     },
-    methods: {
-        getAccounts() {
-            AccountService.getAccounts().then((response) => {
-                console.log("response obtained: ", response);
-                this.Accounts = response.data;
-            });
-        },
-        
-    }
-}
+    deleteAccount() {
+      // Implement the logic for deleting an account
+      console.log("Delete Account clicked");
+      this.$router.push({ name: "deleteAccount" });
+    },
+  },
+};
 </script>
-
+  
 <style scoped>
- .container {
-    padding: 20px;
-    padding-top: 70px;
-  }
+/* Style for the container div */
+div {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Style for the heading */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for the action buttons container */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for each action button */
+button {
+  background-color: #7da4ad;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
 .navbar-light .navbar-brand {
   color: #fff;
   font-size: 25px;
@@ -143,4 +169,10 @@ export default {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #7da4ad;
 }
+
+.content {
+  padding-top: 70px;
+  /* Adjust this value as needed */
+}
 </style>
+  
