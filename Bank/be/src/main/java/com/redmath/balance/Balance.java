@@ -1,7 +1,5 @@
 package com.redmath.balance;
 import java.time.LocalDate;
-import java.util.Date;
-import com.redmath.account.Account;
 import jakarta.persistence.*;
 
 @Entity(name = "Balance")

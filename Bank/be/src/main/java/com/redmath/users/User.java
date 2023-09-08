@@ -1,7 +1,4 @@
 package com.redmath.users;
-
-import java.time.LocalDateTime;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 

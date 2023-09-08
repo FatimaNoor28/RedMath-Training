@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <router-link to="/" class="nav-link">Home</router-link>           
+              <router-link to="/homeUser" class="nav-link">Home</router-link>           
             </li>
             <li class="nav-item">
               <router-link to="/about" class="nav-link">About</router-link>           
@@ -228,23 +228,24 @@ h1{
 }
 
 .main{
-  background-image: url('./money.jpg'); /* Specify the path to your background image */
+  background-image: url('./images/money.jpg'); /* Specify the path to your background image */
   background-size: cover;
   background-position: center;
   color: #333; /* Text color on top of the background image */
-  padding-top: 100px; 
+  padding-top: 10vw;
+  padding-bottom: 20vw; 
 }
 .card-text,
 card-title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 21px;
 }
-h1 {
+/* h1 {
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
     color: #333;
-}
+} */
 
 .btn-primary {
     background-color:#333;

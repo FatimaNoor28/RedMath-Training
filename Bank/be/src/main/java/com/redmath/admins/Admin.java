@@ -3,7 +3,6 @@ package com.redmath.admins;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-//import java.time.LocalDateTime;
 
 @Entity(name = "Admins")
 public class Admin {

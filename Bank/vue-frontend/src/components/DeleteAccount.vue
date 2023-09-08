@@ -1,13 +1,13 @@
 <template>
   <div class="main">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top"  style="   background-color: #7da4ad;">
-        <a class="navbar-brand" href="#">XYZ Bank</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
+      <router-link to="/homeAdmin" class="navbar-brand">XYZ Bank</router-link> <button aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent"
           data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <router-link to="/" class="nav-link">Home</router-link>           
+              <router-link to="/homeAdmin" class="nav-link">Home</router-link>           
             </li>
             <li class="nav-item">
               <router-link to="/about" class="nav-link">About</router-link>           
@@ -79,7 +79,7 @@ export default {
 <style scoped>
 
 .main{
-  background-image: url('./money.jpg'); /* Specify the path to your background image */
+  background-image: url('./images/money.jpg'); /* Specify the path to your background image */
   background-size: cover;
   background-position: center;
   color: #333; /* Text color on top of the background image */

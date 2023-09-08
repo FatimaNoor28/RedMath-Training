@@ -1,11 +1,6 @@
 package com.redmath.account;
-import com.redmath.balance.Balance;
 import com.redmath.basic.ApiResponse;
 
-import com.redmath.transaction.Transaction;
-
-import com.redmath.users.User;
-//import org.springframework.security.core.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,9 +8,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 
-import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 
@@ -31,15 +24,11 @@ public class AccountController {
 
     public AccountController(AccountService service){ this.service = service; }
 
-//    @PostMapping("/login")
-//    public ResponseEntity<?> LoginUser(@RequestBody User user){
-//        LoginMessage loginMessage = service.loginUser(user);
-//        return ResponseEntity.ok(loginMessage);
-//    }
 
-    private boolean passwordsMatch(String providedPassword, String actualPassword) {
-        return providedPassword.equals(actualPassword);
-    }
+
+//    private boolean passwordsMatch(String providedPassword, String actualPassword) {
+//        return providedPassword.equals(actualPassword);
+//    }
 
     @GetMapping
     @PreAuthorize("hasAuthority('ADMIN')")

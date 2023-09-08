@@ -2,8 +2,6 @@ package com.redmath.account;
 import com.redmath.balance.Balance;
 import com.redmath.transaction.Transaction;
 
-import java.awt.font.OpenType;
-import java.util.List;
 import java.util.Optional;
 
 public class AccountDetailsResponse {

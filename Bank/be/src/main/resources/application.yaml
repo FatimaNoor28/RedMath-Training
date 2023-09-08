@@ -1,9 +1,11 @@
 logging:
-  level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}] ${HOSTNAME}"
+  level:
     sql: debug
+    web: debug
     '[com.redmath]': debug
   pattern:
-    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}] ${HOSTNAME}"
+    level: "%5p ${HOSTNAME}"
+
 
 spring:
   application:
@@ -13,14 +15,15 @@ spring:
     hibernate:
       ddl-auto: none
   datasource:
-    url: ${users.db.url}
-    username: ${users.db.user_name}
-    password: ${users.db.password}
+    url: ${bank.db.url}
+    username: ${bank.db.username}
+    password: ${bank.db.password}
   h2:
     console:
-      enabled: ${news.h2.console:false}
+      enabled: ${bank.h2.console:false}
   liquibase:
-    contexts: ${users.liquibase.contexts:}
+    contexts: ${bank.liquibase.contexts:}
+
   management:
     endpoints:
       web:
@@ -31,4 +34,4 @@ spring:
         show-details: when-authorized
 
 
-spring.profiles.include: local
+spring.profiles.include: dev

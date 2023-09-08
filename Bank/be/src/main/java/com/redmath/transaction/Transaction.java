@@ -1,9 +1,6 @@
 package com.redmath.transaction;
 import java.time.LocalDate;
-import java.util.Date;
-import com.redmath.balance.Balance;
 import jakarta.persistence.*;
-import org.springframework.cglib.core.Local;
 
 @Entity(name = "Transaction")
 public class Transaction {

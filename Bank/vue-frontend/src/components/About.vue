@@ -63,11 +63,12 @@ export default {
 <style scoped>
 /* Add styles for your About page here */
 .about-page {
-  background-image: url('./bank1.avif'); /* Specify the path to your background image */
+  background-image: url('./images/bank1.avif'); /* Specify the path to your background image */
   background-size: cover;
   background-position: center;
   color: #333; /* Text color on top of the background image */
-  padding: 20px 0; /* Adjust padding as needed */
+  padding: 15vw; /* Adjust padding as needed */
+  /* padding-bottom: 20vh; */
 }
 
 .container {

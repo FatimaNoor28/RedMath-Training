@@ -1,9 +1,5 @@
 package com.redmath.account;
-import java.time.LocalDateTime;
-
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
@@ -15,13 +11,6 @@ public class Account {
     private String name;
     private String email;
     private String address;
-//    private String roles;
-//    public String getRoles() {
-//        return roles;
-//    }
-//    public void setRoles(String roles) {
-//        this.roles = roles;
-//    }
 
     public Long getId() {
         return account_id;

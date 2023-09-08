@@ -1,7 +1,6 @@
  package com.redmath.config;
 
 
- import org.springframework.beans.factory.annotation.Autowired;
  import org.springframework.beans.factory.annotation.Value;
  import org.springframework.context.annotation.Bean;
  import org.springframework.context.annotation.Configuration;
@@ -70,7 +69,8 @@
 //                 .requestMatchers(AntPathRequestMatcher.antMatcher(HttpMethod.POST, "/api/v1/account")).hasRole("ADMIN")
                  .anyRequest().authenticated()
                  .and().cors();
-         http.csrf().disable();
+//         http.csrf().disable();
+         
          return http.build();
      }
      // CORS Configuration

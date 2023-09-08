@@ -45,7 +45,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img alt="First slide" class="d-block w-100" src="./bank.jpg">
+                    <img alt="First slide" class="d-block w-100" src="./images/bank.jpg">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Welcome to XYZ Bank</h5>
                         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt

@@ -83,11 +83,12 @@ export default {
   
 <style scoped>
 .main{
-  background-image: url('./money.jpg'); /* Specify the path to your background image */
+  background-image: url('./images/bank.jpg'); /* Specify the path to your background image */
   background-size: cover;
   background-position: center;
   color: #333; /* Text color on top of the background image */
-  padding-top: 100px; 
+  padding-top: 10vw;
+  padding-bottom: 10vw; 
 }
 
 .container {

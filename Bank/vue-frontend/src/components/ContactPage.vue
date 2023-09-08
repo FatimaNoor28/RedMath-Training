@@ -39,7 +39,7 @@
             <p><strong>Address:</strong> 123 Main Street, City, Country</p>
           </div>
           <div class="col-md-6">
-            <img src="./3608.avif" alt="Contact Image" class="img-fluid rounded">
+            <img src="./images/3608.avif" alt="Contact Image" class="img-fluid rounded">
           </div>
         </div>
       </div>

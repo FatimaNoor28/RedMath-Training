@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <router-link to="/" class="nav-link">Home</router-link>           
+              <router-link to="/homeAdmin" class="nav-link">Home</router-link>           
             </li>
             <li class="nav-item">
               <router-link to="/about" class="nav-link">About</router-link>           
@@ -99,7 +99,7 @@ h1{
   letter-spacing: 2px;
 }
 .main{
-  background-image: url('./money.jpg'); /* Specify the path to your background image */
+  background-image: url('./images/money.jpg'); /* Specify the path to your background image */
   background-size: cover;
   background-position: center;
   color: #333; /* Text color on top of the background image */

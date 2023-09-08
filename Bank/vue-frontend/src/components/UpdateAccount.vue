@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <router-link to="/" class="nav-link">Home</router-link>           
+              <router-link to="/homeAdmin" class="nav-link">Home</router-link>           
             </li>
             <li class="nav-item">
               <router-link to="/about" class="nav-link">About</router-link>           
@@ -106,7 +106,7 @@ export default {
 <style scoped>
 
 .main{
-  background-image: url('./money.jpg'); /* Specify the path to your background image */
+  background-image: url('./images/money.jpg'); /* Specify the path to your background image */
   background-size: cover;
   background-position: center;
   color: #333; /* Text color on top of the background image */
@@ -120,7 +120,7 @@ export default {
     border: 1px solid #ccc;
     border-radius: 3vw;
     box-shadow: 0 1vh 5vw rgba(0, 0, 0, 0.1);
-    margin-bottom: 20vh;
+    margin-bottom: 5vh;
     margin-top: 20vh;
     background-color:lightgrey;
 }

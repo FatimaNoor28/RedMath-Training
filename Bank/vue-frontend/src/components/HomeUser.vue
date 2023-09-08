@@ -1,6 +1,7 @@
   <template>
+    <div class="main">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="   background-color: #7da4ad;">
-        <a class="navbar-brand" href="#">XYZ Bank</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
+      <router-link to="/" class="navbar-brand">XYZ Bank</router-link><button aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent"
           data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,6 +32,7 @@
         <button @click="updateAccount">Make Transaction</button>
         <!-- <button @click="deleteAccount">Delete Account</button> -->
       </div>
+    </div>
     </div>
   </template>
   
@@ -72,10 +74,20 @@
   
   <style scoped>
 
+.main{
+  background-image: url('./images/bank.jpg'); /* Specify the path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: #333; /* Text color on top of the background image */
+  padding-top: 10vw;
+  padding-bottom: 10vw; 
+  
+}
 .container {
     max-width: 40vw;
     margin: 0 auto;
-    margin-top: 20vh;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
     padding: 5vh;
     border: 1vw solid #ccc;
     border-radius: 2vw;
