@@ -70,7 +70,7 @@
                  .anyRequest().authenticated()
                  .and().cors();
 //         http.csrf().disable();
-         
+
          return http.build();
      }
      // CORS Configuration
