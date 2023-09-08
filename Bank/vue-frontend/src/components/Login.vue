@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="styles.css">
     </head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid" style="   background-color: #7da4ad;">
-        <a class="navbar-brand" href="#">Mouri</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
+    <body class="main">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="   background-color: #7da4ad;">
+      <!-- <div class="container-fluid" style="   background-color: #7da4ad;"> -->
+        <a class="navbar-brand" href="#">XYZ Bank</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent"
           data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,7 +31,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      <!-- </div> -->
     </nav>
         <div class="row container">
             <div class="col-sm-4" id="formLogin">
@@ -133,6 +133,13 @@ export default {
 
 <style scoped>
 /* styles.css */
+.main{
+  background-image: url('./bank4.jpg'); /* Specify the path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: #333; /* Text color on top of the background image */
+  padding-top: 100px; 
+}
 
 h2 {
     text-align: center;
@@ -140,50 +147,20 @@ h2 {
     font-weight: bold;
     color: #333;
 }
+.form-group {
+    margin-bottom: 1vh;
 
+}
 #formLogin {
     background-color: lightgrey;
 
 }
 
 label {
-    font-weight: bold;
-    /* Make the label text bold */
-    color: #333;
-    /* Change the label text color */
+    font-weight: bold; /* Make the label text bold */
+    color: #333; /* Change the label text color */
 }
 
-/* Center the form horizontally */
-.col-sm-4 {
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    /* padding: 20px; */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: lightgrey;
-    margin-bottom: 50px;
-}
-
-/* Style the form container */
-.form-group {
-    margin-bottom: 20px;
-
-}
-
-/* Style the labels */
-label {
-    font-weight: bold;
-}
-
-/* Style the input fields */
 .form-control {
     width: 100%;
     padding: 10px;
@@ -192,10 +169,8 @@ label {
     font-size: 16px;
 }
 
-/* Style the login button */
-
 .btn-primary {
-    background-color: #333;
+    background-color:#333;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -204,10 +179,39 @@ label {
     cursor: pointer;
 }
 
-/* Add hover effect to the login button */
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #555;
 }
+/* Center the form horizontally */
+.col-sm-4 {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* .container {
+    max-width: 40vw;
+    margin: 0 auto;
+    margin-top: 15vh;
+    padding: 5vh;
+    border: 1vw solid #ccc;
+    border-radius: 2vw;
+    box-shadow: 0 2pw 5pw rgba(0, 0, 0, 0.1);
+    background-color:lightgrey;
+} */
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10vh;
+
+    border: 1px solid #ccc;
+    border-radius: 2vw;
+    box-shadow: 0 2vw 5vw rgba(0, 0, 0, 0.1);
+    background-color: lightgrey;
+    margin-bottom: 10vw;
+}
+
 
 .navbar-light .navbar-brand {
   color: #fff;

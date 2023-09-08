@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid" style="   background-color: #7da4ad;">
-        <a class="navbar-brand" href="#">Mouri</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
+  <div class="main">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="   background-color: #7da4ad;">
+        <a class="navbar-brand" href="#">XYZ Bank</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent"
           data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -23,7 +23,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
     <div class="container">
 
@@ -51,6 +50,7 @@
             </tbody>
         </table>
     </div>
+  </div>
 </template>
 
 <script>
@@ -91,9 +91,24 @@ export default {
 </script>
 
 <style scoped>
+h1{
+  color: #000;
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.main{
+  background-image: url('./money.jpg'); /* Specify the path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: #333; /* Text color on top of the background image */
+  padding-top: 100px; 
+}
  .container {
-    padding: 20px;
-    padding-top: 70px;
+    padding: 10vw;
+    padding-top: 10vh;
+    margin-bottom: 10vh;
   }
 .navbar-light .navbar-brand {
   color: #fff;
